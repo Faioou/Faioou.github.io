@@ -1,7 +1,5 @@
 <script>
     import logo from '$lib/assets/logo-tea.jpg';
-    import facebook from '$lib/assets/facebook.jpg';
-    import instagram from '$lib/assets/instagram.jpg';
 </script>
 
 <header>
