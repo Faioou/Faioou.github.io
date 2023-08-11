@@ -19,7 +19,7 @@ body {
 }
 
 :root {
-    --pink: #F6CEEC;
+    --pink: #F5A9E1;
     --light-grey: #F2F2F2;
     --dark-grey: #A4A4A4;
 }
@@ -65,8 +65,8 @@ h1, h2, h3 {
     align-items: center;
 }
 
-.navbar-container-logo img {
-    height: 80%;
+.navbar-container-logo a img {
+    height: 100px;
 }
 
 .navbar-container-items {
@@ -103,6 +103,7 @@ h1, h2, h3 {
 
 .navbar-social svg {
     height: 3vh;
+    padding-left: 2rem;
     fill: var(--pink);
 }
 
@@ -202,9 +203,43 @@ h1, h2, h3 {
 
 }
 
+/* Intro */
+.intro {
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-container {
+    width: 60%;
+}
+
+.intro-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+/* Intro - Media Query */
+@media screen and (max-width: 1280px) {
+    .intro {
+        height: 70vh;
+    }
+
+    .intro-container {
+        width: 80%;
+    }
+}
+
 /* About Us */
 .about {
-    height: 40vh;
+    padding-top: 10vh;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
 }

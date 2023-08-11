@@ -1,0 +1,6 @@
+Site structure:
+
+- Sobre nós
+- Produtos
+- Eventos
+- Outra página que ainda está em estudo
