@@ -8,7 +8,7 @@ const client = createClient({
 });
 
 export async function load() {
-    const postsList = await client.fetch(`*[_type == 'post'] | {_id, title, _createdAt}`);
+    const postsList = await client.fetch(`*[_type == 'about'] | {title}`);
 
     if (postsList) {
       return {
@@ -20,9 +20,3 @@ export async function load() {
       body: new Error("Internal Server Error")
     };
 }
-
-
-
-
-
-// skch9trl1KlFe0cjqbfcxJyU6MFbDXuW4cMtzPsRZgNgju3IWGprkcB3WdFsUgQIuoigksmo6xE46Q4l1Jh1lVTgwIoLxiquHzL9WqVw0sqPXiCxmMdeDG6GDPNCj9nyn9TJF1e1RZg2WW7wlA4Gg9leij3nPOKspnLIXrUTDBT1p83rov2y
