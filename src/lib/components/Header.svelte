@@ -21,7 +21,10 @@
                         <a class = "navbar-link" href = "/events">EVENTOS</a>
                     </li>
                     <li class = "navbar-item">
-                        <a class = "navbar-link" href = "/other">OUTROS</a>
+                        <a class = "navbar-link" href = "/partners">PARCEIROS</a>
+                    </li>
+                    <li class = "navbar-item">
+                        <a class = "navbar-link" href = "/">NOVO ASSOCIADO</a>
                     </li>
                 </ul>
             </div>
