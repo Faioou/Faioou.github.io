@@ -1,6 +1,9 @@
 import {createClient} from "@sanity/client"
 import {toPlainText} from '@portabletext/svelte'
 
+import {toHTML} from '@portabletext/to-html'
+
+
 const client = createClient({
 projectId: "94cqfhj8",
 dataset: "production",
@@ -11,13 +14,13 @@ useCdn: false
 export async function load() {
     const aboutUs = await client.fetch(`*[_type == 'about'][0]{title, body}`);
 
-    console.log(aboutUs)
-    console.log(toPlainText(aboutUs.body))
+    const body = toHTML(aboutUs.body,{components: {},})
 
     if (aboutUs) {
     return {
         title: aboutUs.title,
-        body: toPlainText(aboutUs.body)
+        // body: toPlainText(aboutUs.body)
+        body: aboutUs.body
     };
     }
     return {
