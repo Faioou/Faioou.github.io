@@ -28,7 +28,7 @@
     <div class = "contacts">
         <div class = "contacts-container">
             <div class = "contacts-title">
-                <h1>Contacts</h1>
+                <h1>Contactos</h1>
             </div>
             <hr>
             <div class = "contacts-content">

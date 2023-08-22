@@ -5,6 +5,6 @@
 
 <footer>
     <div class = "footer">
-        <p>Copyright @ Testemunhar É Ajudar - {year} | All rights reserved.</p>
+        <p>Copyright @ Testemunhar É Ajudar - {year} | Todos os direitos reservados.</p>
     </div>
 </footer>
