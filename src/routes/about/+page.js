@@ -1,4 +1,5 @@
-import {createClient} from "@sanity/client";
+import {createClient} from "@sanity/client"
+import {toPlainText} from '@portabletext/svelte'
 
 const client = createClient({
 projectId: "94cqfhj8",
@@ -8,12 +9,15 @@ useCdn: false
 });
 
 export async function load() {
-    const aboutUs = await client.fetch(`*[_type == 'about'] | {title, body}`);
+    const aboutUs = await client.fetch(`*[_type == 'about'][0]{title, body}`);
+
+    console.log(aboutUs)
+    console.log(toPlainText(aboutUs.body))
 
     if (aboutUs) {
     return {
-        title: aboutUs[0]['title'],
-        body: aboutUs[0]['body'][0]['children'][0]['text']
+        title: aboutUs.title,
+        body: toPlainText(aboutUs.body)
     };
     }
     return {
