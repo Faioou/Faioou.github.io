@@ -10,8 +10,6 @@ useCdn: false
 export async function load() {
     const aboutUs = await client.fetch(`*[_type == 'about'] | {title, body}`);
 
-    console.log(aboutUs[0]['body'][0]['children'][0]['text'])
-
     if (aboutUs) {
     return {
         title: aboutUs[0]['title'],

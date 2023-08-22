@@ -1,7 +1,6 @@
 <script>
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
-    export let data;
 </script>
 
 <div class = "wrapper">
@@ -15,9 +14,7 @@
             </div>
             <hr>
             <div class = "about-content">
-                {#each data['posts'] as post}
-                    {post.title}
-                {/each}
+
             </div>
         </div>
     </div>
