@@ -6,11 +6,11 @@
 <div class = "wrapper">
     <Header />
 
-    <!-- Events -->
+    <!-- Partners -->
     <div class = "about">
         <div class = "about-container">
             <div class = "about-title">
-                <h1>Eventos</h1>
+                <h1>Parceiros</h1>
             </div>
             <hr>
             <div class = "about-content">
