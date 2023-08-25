@@ -239,7 +239,6 @@ h1, h2, h3 {
 /* About Us */
 .about {
     padding-top: 10vh;
-    height: 90vh;
     display: flex;
     justify-content: space-around;
 }
@@ -255,6 +254,7 @@ h1, h2, h3 {
 
 .about-content {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     text-align: justify;
 }
