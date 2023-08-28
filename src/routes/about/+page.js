@@ -1,8 +1,4 @@
 import {createClient} from "@sanity/client"
-import {toPlainText} from '@portabletext/svelte'
-import {toHTML} from '@portabletext/to-html'
-
-import imageUrlBuilder from '@sanity/image-url'
 
 const client = createClient({
 projectId: "94cqfhj8",
