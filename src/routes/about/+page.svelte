@@ -16,7 +16,7 @@
             </div>
             <hr>
             <div class = "about-content" id = "about-content-body">
-                <PortableText content = {data.body} />
+                <PortableText content = {data.body}/>
             </div>
         </div>
     </div>
