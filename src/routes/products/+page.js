@@ -1,0 +1,28 @@
+import {createClient} from "@sanity/client"
+
+const client = createClient({
+    projectId: "94cqfhj8",
+    dataset: "production",
+    apiVersion: "2021-10-21",
+    useCdn: false
+})
+
+export async function load() {
+    const products = await client.fetch(`*[_type == 'products']{title, description, "imageUrl": image.asset->url}`);
+
+    if (products) {
+        let productsList = []
+        for (let i = 0;  i < products.length; i++) {
+            productsList.push({
+                title: products[i].title,
+                image: products[i].imageUrl,
+                description: products[i].description
+            })
+        }
+        return {productsList}
+    }
+        return {
+        status: 500,
+        body: new Error("Internal Server Error")
+    }
+}

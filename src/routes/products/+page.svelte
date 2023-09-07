@@ -2,6 +2,11 @@
     import Header from '$lib/components/Header.svelte';
     import Gallery from '$lib/components/Gallery.svelte';
     import Footer from '$lib/components/Footer.svelte';
+    import PortableText from '$lib/components/PortableText.svelte';
+    import SanityImage from "$lib/components/SanityImage.svelte";
+
+    export let data;
+    console.log(data)
 </script>
 
 <div class = "wrapper">
@@ -15,7 +20,18 @@
             </div>
             <hr>
             <div class = "about-content">
-                <Gallery />
+                <div class = "showcase">
+                    <div class = "showcase-container">
+                        {#each data.productsList as block}
+                            <div class = "showcase-card">
+                                <h2>{block.title}</h2>
+                                <img src="{block.image}" alt="">
+                                <PortableText content = {block.description} />
+                            </div>
+                        {/each}
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

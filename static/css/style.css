@@ -66,7 +66,7 @@ h1, h2, h3 {
 }
 
 .navbar-container-logo a img {
-    height: 100px;
+    max-height: 10vh;
 }
 
 .navbar-container-items {
@@ -87,10 +87,6 @@ h1, h2, h3 {
     font-size: 14px;
     color: black;
     text-decoration: none;
-}
-
-.navbar-link:hover {
-
 }
 
 .navbar-social {
@@ -283,7 +279,7 @@ h1, h2, h3 {
 
 }
 
-/* Gallery */
+/* Component: Gallery */
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -335,6 +331,61 @@ h1, h2, h3 {
     }
 
     .gallery-card img {
+        padding: 0.6rem;
+    }
+}
+
+/* Component: Showcase */
+.showcase {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.showcase-container {
+    width: 60%;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr;
+}
+
+.showcase-card {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.showcase-card img {
+    max-width: 100%;
+    padding: 0.8rem;
+}
+
+/* Showcase - Media Query */
+@media screen and (min-width: 1300px) {
+    .showcase-card {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .showcase-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 0.7fr));
+    }
+
+    .showcase-card {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .showcase-card img {
         padding: 0.6rem;
     }
 }
