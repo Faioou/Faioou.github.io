@@ -24,7 +24,7 @@
                     <div class = "showcase-container">
                         {#each data.productsList as block}
                             <div class = "showcase-card">
-                                <h2>{block.title}</h2>
+                                <h3>{block.title}</h3>
                                 <img src="{block.image}" alt="">
                                 <PortableText content = {block.description} />
                             </div>

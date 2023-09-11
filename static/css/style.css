@@ -352,8 +352,8 @@ h1, h2, h3 {
 }
 
 .showcase-card {
-    height: 600px;
-    width: 400px;
+    height: 400px;
+    width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -364,7 +364,7 @@ h1, h2, h3 {
 
 .showcase-card img {
     max-width: 100%;
-    padding: 0.8rem;
+    padding: 0 0.8rem;
 }
 
 /* Showcase - Media Query */
