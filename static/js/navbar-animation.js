@@ -3,6 +3,7 @@ const navbar = () => {
     const navbarLinks = document.querySelector('.navbar-items');
     const navbarUniqueLinks = document.querySelectorAll('.navbar-items li');
     const navbarLinksItems = document.querySelectorAll('.navbar-link');
+    const navbarSocialLinks = document.querySelectorAll('.navbar-social')
 
     navbarBurguer.addEventListener('click', () => {
          // on click, enable 'navbar-burguer-active' class
@@ -19,6 +20,14 @@ const navbar = () => {
                 link.style.animation = '';
             } else {
                 link.style.animation = `navbarFade 0.5s ease forwards ${index / 2 + 1}s`; // divide index by 5 to add a delay in the fade
+            }
+        });
+
+        navbarSocialLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navbarFade 0.5s ease forwards ${index / 2 + 1}s`;
             }
         });
 

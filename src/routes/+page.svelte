@@ -32,10 +32,10 @@
             </div>
             <hr>
             <div class = "contacts-content">
-                <h2>e-mail@tea.pt</h2>
+                <h2>testemunhareajudar@gmail.com</h2>
                 <p>Rua da Associação 123<br />
                     XXXX-XXX Porto<br />
-                <!-- <a href = "">[ver mapa]</a><br /> -->
+                <a href = "">[ver mapa]</a><br />
                 +3510000000</p>
             </div>
         </div>

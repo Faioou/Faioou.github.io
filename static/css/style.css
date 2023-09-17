@@ -97,6 +97,10 @@ h1, h2, h3 {
     justify-content: center;
 }
 
+#navbar-social-mobile {
+    display: none;
+}
+
 .navbar-social svg {
     height: 3vh;
     padding-left: 2rem;
@@ -135,7 +139,7 @@ h1, h2, h3 {
         top: 8vh;
         right: 0px;
         width: 100%;
-        height: 30vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -148,6 +152,14 @@ h1, h2, h3 {
 
     .navbar-items li {
         opacity: 0; /* to hide the menu bar content */
+    }
+
+    #navbar-social-desktop {
+        display: none;
+    }
+
+    #navbar-social-mobile {
+        display: block;
     }
 
     .navbar-burguer {
@@ -186,6 +198,7 @@ h1, h2, h3 {
 
 /* Banner */
 .banner {
+    padding-top: 10vh;
     display: inline-block;
     z-index: 2;
 }
@@ -194,14 +207,9 @@ h1, h2, h3 {
     max-width: 100%;
 }
 
-/* Banner - Media Query */
-@media screen and (max-width: 1280px) {
-
-}
-
 /* Intro */
 .intro {
-    height: 40vh;
+    padding: 4rem 0 4rem;
     display: flex;
     justify-content: space-around;
 }
@@ -223,9 +231,6 @@ h1, h2, h3 {
 
 /* Intro - Media Query */
 @media screen and (max-width: 1280px) {
-    .intro {
-        height: 70vh;
-    }
 
     .intro-container {
         width: 80%;
@@ -392,7 +397,7 @@ h1, h2, h3 {
 
 /* Contacts */
 .contacts {
-    height: 60vh;
+    padding: 4rem 0 4rem;
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
@@ -446,4 +451,12 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-around;
     background-color: var(--light-grey);
+}
+
+/* Footer - Media Query */
+@media screen and (max-width: 1280px) {
+    .footer p {
+        width: 80%;
+    }
+
 }

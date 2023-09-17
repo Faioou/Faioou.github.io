@@ -3,7 +3,6 @@
     import Gallery from '$lib/components/Gallery.svelte';
     import Footer from '$lib/components/Footer.svelte';
     import PortableText from '$lib/components/PortableText.svelte';
-    import SanityImage from "$lib/components/SanityImage.svelte";
 
     export let data;
     console.log(data)
