@@ -365,6 +365,7 @@ h1, h2, h3 {
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1rem
 }
 
 .showcase-card img {
@@ -372,26 +373,13 @@ h1, h2, h3 {
     padding: 0 0.8rem;
 }
 
-/* Showcase - Media Query */
-@media screen and (min-width: 1300px) {
-    .showcase-card {
-        margin: 20px;
-    }
-}
-
 @media screen and (max-width: 1280px) {
     .showcase-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 0.7fr));
-    }
-
-    .showcase-card {
-        height: 250px;
-        width: 250px;
-        margin-bottom: 20px;
+        grid-template-columns: 1fr;
     }
 
     .showcase-card img {
-        padding: 0.6rem;
+        padding: 0 0.6rem;
     }
 }
 
