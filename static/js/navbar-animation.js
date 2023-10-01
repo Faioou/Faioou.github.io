@@ -6,7 +6,8 @@ const navbar = () => {
     const navbarSocialLinks = document.querySelectorAll('.navbar-social')
 
     navbarBurguer.addEventListener('click', () => {
-         // on click, enable 'navbar-burguer-active' class
+
+        // on click, enable 'navbar-burguer-active' class
         navbarLinks.classList.toggle('navbar-burguer-active');
 
         // change the links color
