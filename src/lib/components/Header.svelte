@@ -24,7 +24,7 @@
                         <a class = "navbar-link" href = "/partners">PARCEIROS</a>
                     </li>
                     <li class = "navbar-item">
-                        <a class = "navbar-link" href = "https://docs.google.com/document/d/1kMFEfe22JvvdNxEsLPnqlq4ABMy8_E7A/" target = "_blank">NOVO ASSOCIADO</a>
+                        <a class = "navbar-link" href = "https://forms.gle/ACZUpTC84fZFgQ3x8" target = "_blank">NOVO ASSOCIADO</a>
                     </li>
                     <li id = "navbar-social-mobile">
                         <div class = "navbar-social">
