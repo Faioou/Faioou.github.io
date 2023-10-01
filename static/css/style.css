@@ -419,6 +419,27 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
+.contacts-content-address-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-content-address  {
+    width: 50%;
+}
+.contacts-content-address h2 {
+    color: var(--dark-grey);
+}
+
+.contacts-content-address a {
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+.contacts-content-address a:hover {
+    text-decoration: underline;
+}
+
 /* Contacts - Media Query */
 @media screen and (max-width: 1280px) {
     .contacts-container {
@@ -429,6 +450,13 @@ h1, h2, h3 {
         font-size: 1em;
     }
 
+    .contacts-content-address-container {
+        flex-direction: column;
+    }
+
+    .contacts-content-address  {
+        width: 100%;
+    }
 }
 
 /* Footer */

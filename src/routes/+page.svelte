@@ -32,11 +32,21 @@
             </div>
             <hr>
             <div class = "contacts-content">
-                <h2>testemunhareajudar@gmail.com</h2>
-                <p>Rua de Crestins 18<br />
-                    4470 Moreira da Maia<br />
-                <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a><br />
-                +3510000000</p>
+                <h2>testemunhareajudar@gmail.com <br /> +3510000000</h2>
+            </div>
+            <div class="contacts-content-address-container">
+                <div class="contacts-content-address">
+                    <h2>Sede</h2>
+                    <p>Rua de Crestins 18<br />
+                        4470 Moreira da Maia<br />
+                    <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a></p>
+                </div>
+                <div class = "contacts-content-address">
+                    <h2>Casa TEA</h2>
+                    <p>Rua de Crestins 18<br />
+                        4470 Moreira da Maia<br />
+                    <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a></p>
+                </div>
             </div>
         </div>
     </div>
