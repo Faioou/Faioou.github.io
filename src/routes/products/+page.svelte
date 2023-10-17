@@ -5,7 +5,6 @@
     import PortableText from '$lib/components/PortableText.svelte';
 
     export let data;
-    console.log(data)
 </script>
 
 <div class = "wrapper">
