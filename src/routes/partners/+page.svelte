@@ -7,13 +7,13 @@
     <Header />
 
     <!-- Partners -->
-    <div class = "about">
-        <div class = "about-container">
-            <div class = "about-title">
+    <div class = "content">
+        <div class = "content-container">
+            <div class = "content-title">
                 <h1>Parceiros</h1>
             </div>
             <hr>
-            <div class = "about-content">
+            <div class = "content-content">
 
             </div>
         </div>

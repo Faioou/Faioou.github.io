@@ -10,13 +10,13 @@
     <Header />
 
     <!-- About Us-->
-    <div class = "about">
-        <div class = "about-container">
-            <div class = "about-title">
+    <div class = "content">
+        <div class = "content-container">
+            <div class = "content-title">
                 <h1>{data.title}</h1>
             </div>
             <hr>
-            <div class = "about-content" id = "about-content-body">
+            <div class = "content-content" id = "content-content-body">
                 <PortableText content = {data.body}/>
             </div>
         </div>

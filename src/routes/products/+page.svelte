@@ -11,21 +11,25 @@
     <Header />
 
     <!-- Products -->
-    <div class = "about">
-        <div class = "about-container">
-            <div class = "about-title">
+    <div class = "content">
+        <div class = "content-container">
+            <div class = "content-title">
                 <h1>Produtos</h1>
             </div>
             <hr>
-            <div class = "about-content">
+            <div class = "content-content">
                 <div class = "showcase">
                     <div class = "showcase-container">
                         {#each data.productsList as block}
                             <div class = "showcase-card">
-                                <h3>{block.title}</h3>
-                                <img src="{block.image}" alt="">
-                                <PortableText content = {block.description} />
-                                <p>{block.price} €</p>
+                                <div class = "showcase-card-image">
+                                    <img src="{block.image}" alt="">
+                                </div>
+                                <div class = "showcase-card-text">
+                                    <h3>{block.title}</h3>
+                                    <PortableText content = {block.description} />
+                                    <p>{block.price} €</p>
+                                </div>
                             </div>
                         {/each}
                     </div>

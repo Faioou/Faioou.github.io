@@ -241,53 +241,55 @@ h1, h2, h3 {
 
 /* Intro - Media Query */
 @media screen and (max-width: 1280px) {
-
     .intro-container {
         width: 80%;
     }
 }
 
-/* About Us */
-.about {
+/* Content */
+.content {
     padding-top: 10vh;
     display: flex;
     justify-content: space-around;
 }
 
-.about-container {
+.content-container {
     width: 60%;
 }
 
-.about-title {
+.content-title {
+    height: 10vh;
     display: flex;
     justify-content: space-around;
 }
 
-.about-content {
+.content-content {
+    padding: 4rem 0 4rem;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: justify;
 }
 
-.about-content-image {
+.content-content-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-content-image img {
+.content-content-image img {
     max-width: 50%;
     padding: 2rem 0 2rem 0;
 }
 
-/* About Us - Media Query */
+/* content Us - Media Query */
 @media screen and (max-width: 1280px) {
-    .about-container {
+    .content-container {
         width: 80%;
     }
 
-    .about-content-image img {
+    .content-content-image img {
         max-width: 80%;
         padding: 1rem 0 1rem 0;
     }
@@ -381,20 +383,38 @@ h1, h2, h3 {
 }
 
 .showcase-card {
-    height: 400px;
-    width: 270px;
+    height: 300px;
+    width: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    line-height: 1;
     margin: 1rem
+}
+
+.showcase-card-image {
+    padding: 1rem;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .showcase-card img {
     max-width: 100%;
-    padding: 0 0.8rem;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.showcase-card-text {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 1280px) {
@@ -402,9 +422,20 @@ h1, h2, h3 {
         grid-template-columns: 1fr;
     }
 
-    .showcase-card img {
-        padding: 0 0.6rem;
+    .showcase-card {
+        height: 400px;
+        width: 270px;
+        flex-direction: column;
     }
+
+    .showcase-card-image {
+        width: 100%;
+    }
+
+    .showcase-card-text {
+        width: 100%;
+    }
+
 }
 
 /* Contacts */

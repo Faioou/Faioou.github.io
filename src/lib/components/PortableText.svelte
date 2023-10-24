@@ -15,7 +15,7 @@
         {/if}
     {/if}
     {#if block._type === 'image'}
-        <div class="about-content-image">
+        <div class="content-content-image">
             <SanityImage image_ref = {block.asset._ref} />
         </div>
     {/if}
