@@ -25,6 +25,7 @@
                                 <h3>{block.title}</h3>
                                 <img src="{block.image}" alt="">
                                 <PortableText content = {block.description} />
+                                <p>{block.price} €</p>
                             </div>
                         {/each}
                     </div>
