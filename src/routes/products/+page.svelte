@@ -22,14 +22,10 @@
                     <div class = "showcase-container">
                         {#each data.productsList as block}
                             <div class = "showcase-card">
-                                <div class = "showcase-card-image">
-                                    <img src="{block.image}" alt="">
-                                </div>
-                                <div class = "showcase-card-text">
-                                    <h3>{block.title}</h3>
-                                    <PortableText content = {block.description} />
-                                    <p>{block.price} €</p>
-                                </div>
+                                <img src="{block.image}" alt="">
+                                <h3>{block.title}</h3>
+                                <PortableText content = {block.description} />
+                                <p id = "price"><span>{block.price} €</span></p>
                             </div>
                         {/each}
                     </div>
