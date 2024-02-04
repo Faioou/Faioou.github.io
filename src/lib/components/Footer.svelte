@@ -6,6 +6,32 @@
 <footer>
     <div class = "footer">
         <div class="footer-container">
+            <!-- Contacts -->
+            <div class = "contacts">
+                <div class = "contacts-container">
+                    <div class = "contacts-title">
+                        <h1>Contactos</h1>
+                    </div>
+                    <hr>
+                    <div class = "contacts-content">
+                        <h2>testemunhareajudar@gmail.com <br /> +3510000000</h2>
+                    </div>
+                    <div class="contacts-content-address-container">
+                        <div class="contacts-content-address">
+                            <h2>Sede</h2>
+                            <p>Alameda Professor Hernâni Monteiro<br />
+                                4200-319 Porto<br />
+                            <a href = "https://maps.app.goo.gl/5yhunCAbiQfg8P918">[ver mapa]</a></p>
+                        </div>
+                        <div class = "contacts-content-address">
+                            <h2>Casa TEA</h2>
+                            <p>Rua de Crestins 18<br />
+                                4470 Moreira da Maia<br />
+                            <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr>
             <div class="footer-container-items">
                 <p>Copyright @ Testemunhar É Ajudar - {year} | Todos os direitos reservados.</p>

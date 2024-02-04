@@ -19,16 +19,14 @@
             <hr>
             <div class = "content-content">
                 <div class = "showcase-events">
-                        {#each data.eventsList as block}
-                            <div class = "showcase-events-item">
-                                <h3>{block.title}</h3>
-                                <PortableText content = {block.description} />
-                                <p id = "highlight"><span>{block.date}</span></p>
-                            </div>
-                        {/each}
-
+                    {#each data.eventsList as block}
+                        <div class = "showcase-events-item">
+                            <h3>{block.title}</h3>
+                            <PortableText content = {block.description} />
+                            <p id = "highlight"><span>{block.date}</span></p>
+                        </div>
+                    {/each}
                 </div>
-
             </div>
         </div>
     </div>

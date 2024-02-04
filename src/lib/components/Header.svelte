@@ -29,10 +29,6 @@
                         <a class = "navbar-link" href = "/events">EVENTOS</a>
                     </li>
                     <li class = "navbar-item">
-                        <a class = "navbar-link" href = "/partners">PARCEIROS</a>
-                    </li>
-                    <li class = "navbar-item">
-
                         <a class = "navbar-link" id = "highlight" href = "https://forms.gle/ACZUpTC84fZFgQ3x8" target = "_blank"><span>QUERO TORNAR-ME SÓCIO</span></a>
                     </li>
                 </ul>
