@@ -37,7 +37,6 @@
                 <h1>Parceiros</h1>
             </div>
             <hr>
-
             <div class = "partners-gallery">
                 {#each data.partnersList as block}
                     <div class="partners-card">
