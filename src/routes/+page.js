@@ -8,13 +8,15 @@ const client = createClient({
 })
 
 export async function load() {
-    const partners = await client.fetch(`*[_type == 'partners']{title, "imageUrl": image.asset->url}`);
+    const partners = await client.fetch(`*[_type == 'partners']{title, url, "imageUrl": image.asset->url, description}`)
 
     if (partners) {
         let partnersList = []
         for (let i = 0;  i < partners.length; i++) {
             partnersList.push({
                 image: partners[i].imageUrl,
+                url: partners[i].url,
+                description: partners[i].description,
             })
         }
         return {partnersList}

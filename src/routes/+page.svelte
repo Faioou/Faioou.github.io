@@ -4,6 +4,7 @@
     import Gallery from '$lib/components/Gallery.svelte';
     import Footer from '$lib/components/Footer.svelte';
     import Button from '$lib/components/Button.svelte';
+    import PartnersCarousel from '$lib/components/PartnersCarousel.svelte';
 
     export let data;
 </script>
@@ -38,11 +39,12 @@
             </div>
             <hr>
             <div class = "partners-gallery">
-                {#each data.partnersList as block}
+                <!-- {#each data.partnersList as block}
                     <div class="partners-card">
-                        <img src="{block.image}" alt="">
+                        <a href = "{block.url}"><img src = "{block.image}" alt = "{block.description}"></a>
                     </div>
-                {/each}
+                {/each} -->
+                <PartnersCarousel content = {data} />
             </div>
         </div>
     </div>
