@@ -374,7 +374,7 @@ hr {
 }
 
 .showcase-card {
-    height: 400px;
+    height: auto;
     width: 280px;
     margin: 1rem;
     padding: 1rem;
@@ -385,6 +385,11 @@ hr {
 .showcase-card img {
     max-width: 100%;
     padding: 0;
+}
+
+.category {
+    font-size: 0.7rem;
+    color: var(--dark-grey);
 }
 
 @media screen and (max-width: 1280px) {

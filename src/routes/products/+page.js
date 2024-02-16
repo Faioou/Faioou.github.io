@@ -8,7 +8,7 @@ const client = createClient({
 })
 
 export async function load() {
-    const products = await client.fetch(`*[_type == 'products']{title, "imageUrl": image.asset->url, description, price}`);
+    const products = await client.fetch(`*[_type == "products"]{title, "imageUrl": image.asset->url, description, price, "category": *[_type == "category" && _id == ^.category[0]._ref]}`);
 
     if (products) {
         let productsList = []
@@ -17,7 +17,8 @@ export async function load() {
                 title: products[i].title,
                 image: products[i].imageUrl,
                 description: products[i].description,
-                price: products[i].price
+                price: products[i].price,
+                category: products[i].category[0].description
             })
         }
         return {productsList}

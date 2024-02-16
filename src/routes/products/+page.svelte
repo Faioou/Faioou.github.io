@@ -26,6 +26,7 @@
                                 <h3>{block.title}</h3>
                                 <PortableText content = {block.description} />
                                 <p id = "highlight"><span>{block.price} €</span></p>
+                                <p class = "category">{block.category}</p>
                             </div>
                         {/each}
                     </div>
