@@ -1,6 +1,5 @@
 <script>
     import Header from '$lib/components/Header.svelte';
-    import Gallery from '$lib/components/Gallery.svelte';
     import Footer from '$lib/components/Footer.svelte';
     import PortableText from '$lib/components/PortableText.svelte';
 
@@ -18,6 +17,12 @@
             </div>
             <hr>
             <div class = "content-content">
+                <select name="test" id="test">
+                    <option value = "Todos">Todos</option>
+                    {#each data.productsList as block}
+                        <option value = {block.category}>{block.category}</option>
+                    {/each}
+                </select>
                 <div class = "showcase">
                     <div class = "showcase-container">
                         {#each data.productsList as block}
@@ -31,7 +36,6 @@
                         {/each}
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
