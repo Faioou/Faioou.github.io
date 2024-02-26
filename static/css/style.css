@@ -398,6 +398,13 @@ hr {
     }
 }
 
+/* Component: Select Box */
+select {
+    width: 200px;
+    padding: 1rem;
+    border: #FFFFFF;
+}
+
 /* Events */
 .showcase-events {
     width: 100%;
