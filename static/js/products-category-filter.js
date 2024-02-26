@@ -8,12 +8,12 @@ function updateProductsShowcase() {
         var card = showcaseCards[i];
         var cardId = card.getAttribute("id");
 
-        // Check if the element id matches the category
+        // If element id equal to category or category is equal to "Todos"
         if (cardId === category || category === "Todos") {
-            // Show the card by setting its display style to "block"
+            // Show card
             card.style.display = "block";
         } else {
-            // Hide the card by setting its display style to "none"
+            // Hide card
             card.style.display = "none";
         }
     }
