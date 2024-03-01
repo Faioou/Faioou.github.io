@@ -1,4 +1,13 @@
 <script>
+    import pic1 from '$lib/assets/pic1.jpg';
+    import pic2 from '$lib/assets/pic2.jpg';
+    import pic3 from '$lib/assets/pic3.jpg';
+
+    // List to receive images content
+    export let content = []
+
+    console.log(content.partnersList[0])
+
     const date = new Date()
     const year = date.getFullYear()
 </script>
@@ -6,8 +15,7 @@
 <footer>
     <div class = "footer">
         <div class="footer-container">
-            <!-- Contacts -->
-            <div class = "contacts">
+            <div class = "footer-container-content">
                 <div class = "contacts-container">
                     <div class = "contacts-content">
                         <p><b>CONTACTOS</b></p>
@@ -27,6 +35,26 @@
                             <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a></p>
                         </div>
                     </div>
+                </div>
+                <div class = "site-map-container">
+                    <div class = "site-map-content">
+                        <p><b>MAPA DO SITE</b></p>
+                        <p><a href="/">Sobre Nós</a></p>
+                        <p><a href="/">Produtos</a></p>
+                        <p><a href="/">Eventos</a></p>
+                        <p><a href="/">Blog</a></p>
+                        <p><a href="/">FAQs</a></p>
+                        <p><a href="/" id = "highlight"><span>Quero Tornar-me Sócio</span></a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class = "partners-container">
+                <p><b>PARCEIROS</b></p>
+                <div class = "partners-content">
+                    {#each content.partnersList as item}
+                    <a href = "{item.url}"><img src = "{item.image}" alt = "{item.description}"></a>
+                    {/each}
                 </div>
             </div>
             <hr>
