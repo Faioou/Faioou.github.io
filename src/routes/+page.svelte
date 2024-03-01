@@ -44,10 +44,10 @@
                         <a href = "{block.url}"><img src = "{block.image}" alt = "{block.description}"></a>
                     </div>
                 {/each} -->
-                <PartnersCarousel content = {data} />
+                <!-- <PartnersCarousel content = {data} /> -->
             </div>
         </div>
     </div>
 
-    <Footer />
+    <Footer content = {data} />
 </div>
