@@ -35,17 +35,9 @@
     <div class = "partners">
         <div class = "partners-container">
             <div class = "partners-title">
-                <h1>Parceiros</h1>
+                <h1>Recentes</h1>
             </div>
             <hr>
-            <div class = "partners-gallery">
-                <!-- {#each data.partnersList as block}
-                    <div class="partners-card">
-                        <a href = "{block.url}"><img src = "{block.image}" alt = "{block.description}"></a>
-                    </div>
-                {/each} -->
-                <!-- <PartnersCarousel content = {data} /> -->
-            </div>
         </div>
     </div>
 
