@@ -16,29 +16,9 @@
     <div class = "footer">
         <div class="footer-container">
             <div class = "footer-container-content">
-                <div class = "contacts-container">
-                    <div class = "contacts-content">
-                        <p><b>CONTACTOS</b></p>
-                        <p>testemunhareajudar@gmail.com <br /> +3510000000</p>
-                    </div>
-                    <div class="contacts-content-address-container">
-                        <div class="contacts-content-address">
-                            <p><b>Sede</b></p>
-                            <p>Alameda Professor Hernâni Monteiro<br />
-                                4200-319 Porto<br />
-                            <a href = "https://maps.app.goo.gl/5yhunCAbiQfg8P918">[ver mapa]</a></p>
-                        </div>
-                        <div class = "contacts-content-address">
-                            <p><b>Casa Tea</b></p>
-                            <p>Rua de Crestins 18<br />
-                                4470 Moreira da Maia<br />
-                            <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a></p>
-                        </div>
-                    </div>
-                </div>
                 <div class = "site-map-container">
+                    <p><b>MAPA DO SITE</b></p>
                     <div class = "site-map-content">
-                        <p><b>MAPA DO SITE</b></p>
                         <p><a href="/">Sobre Nós</a></p>
                         <p><a href="/">Produtos</a></p>
                         <p><a href="/">Eventos</a></p>
@@ -47,13 +27,34 @@
                         <p><a href="/" id = "highlight"><span>Quero Tornar-me Sócio</span></a></p>
                     </div>
                 </div>
+                <hr>
+                <div class = "contacts-container">
+                    <div class = "contacts-content">
+                        <p><b>CONTACTOS</b></p>
+                        <p>testemunhareajudar@gmail.com <br /> +3510000000</p>
+                        <div class="contacts-content-address-container">
+                            <div class="contacts-content-address">
+                                <p><b>Sede</b></p>
+                                <p>Alameda Professor Hernâni Monteiro<br />
+                                    4200-319 Porto<br />
+                                <a href = "https://maps.app.goo.gl/5yhunCAbiQfg8P918">[ver mapa]</a></p>
+                            </div>
+                            <div class = "contacts-content-address">
+                                <p><b>Casa Tea</b></p>
+                                <p>Rua de Crestins 18<br />
+                                    4470 Moreira da Maia<br />
+                                <a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver mapa]</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr>
             <div class = "partners-container">
                 <p><b>PARCEIROS</b></p>
                 <div class = "partners-content">
                     {#each content.partnersList as item}
-                    <a href = "{item.url}"><img src = "{item.image}" alt = "{item.description}"></a>
+                        <a href = "{item.url}"><img src = "{item.image}" alt = "{item.description}"></a>
                     {/each}
                 </div>
             </div>
