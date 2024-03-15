@@ -3,10 +3,10 @@
     import PortableText from '$lib/components/PortableText.svelte'
     import Footer from '$lib/components/Footer.svelte';
 
-    let isActive = false;
+    let isActive = [];
 
-    function toggleBtn() {
-        isActive = !isActive;
+    function toggleBtn(index) {
+        isActive[index] = !isActive[index];
     }
 
     export let data;
@@ -26,17 +26,20 @@
                 <div class="showcase-faqs">
                     {#each data.faqsList as block, i}
                         <div class = "showcase-faqs-item">
-
                             <div class="expansion-menu">
                                 <div class="menu-header">
                                     <h3>{block.question}</h3>
-                                    <button class="toggle-btn" on:click={toggleBtn}>&#x25BC;</button>
+                                    <!--
+                                        on:click={() => toggleBtn(i)}: This syntax uses an arrow function as the event handler.
+                                        The arrow function is executed only when the element is clicked, and it then calls the toggleBtn function with the argument i.
+                                        This is the correct way to handle events in Svelte when you need to pass arguments to the event handler function.
+                                    -->
+                                    <button class="toggle-btn" on:click={() => toggleBtn(i)}>&#x25BC;</button>
                                 </div>
-                                <div class={isActive ? 'menu-content expanded' : 'menu-content'}>
+                                <div class={isActive[i] ? 'menu-content expanded' : 'menu-content'}>
                                     <PortableText content = {block.answer} />
                                 </div>
                             </div>
-
                         </div>
                     {/each}
 
