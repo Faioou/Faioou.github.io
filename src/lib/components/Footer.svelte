@@ -1,13 +1,8 @@
 <script>
-    import pic1 from '$lib/assets/pic1.jpg';
-    import pic2 from '$lib/assets/pic2.jpg';
-    import pic3 from '$lib/assets/pic3.jpg';
-
     // List to receive images content
     export let content = []
 
-    console.log(content.partnersList[0])
-
+    // Footer date (year)
     const date = new Date()
     const year = date.getFullYear()
 </script>
