@@ -34,7 +34,7 @@
                                         The arrow function is executed only when the element is clicked, and it then calls the toggleBtn function with the argument i.
                                         This is the correct way to handle events in Svelte when you need to pass arguments to the event handler function.
                                     -->
-                                    <button class="toggle-btn" on:click={() => toggleBtn(i)}>&#62;</button>
+                                    <button class={isActive[i] ? 'toggle-btn active' : 'toggle-btn'} on:click={() => toggleBtn(i)}>&#x25BA;</button>
                                 </div>
                                 <div class={isActive[i] ? 'item-content expanded' : 'item-content'}>
                                     <PortableText content = {block.answer} />

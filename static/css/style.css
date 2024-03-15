@@ -646,6 +646,11 @@ select {
     border: none;
     cursor: pointer;
     font-size: 18px;
+    transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}
+
+.active {
+    transform: rotate(90deg);/* Rotate the button 90 degrees when clicked */
 }
 
 .item-content {
