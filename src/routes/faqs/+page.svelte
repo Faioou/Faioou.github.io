@@ -2,14 +2,12 @@
     import Header from '$lib/components/Header.svelte';
     import PortableText from '$lib/components/PortableText.svelte'
     import Footer from '$lib/components/Footer.svelte';
-    import { onMount } from 'svelte';
 
-    onMount(() => {
-        // Your script loading logic goes here
-        const script = document.createElement('script');
-        script.src = './js/arrow-toggle.js';
-        document.body.appendChild(script);
-    });
+    let isActive = false;
+
+    function toggleBtn() {
+        isActive = !isActive;
+    }
 
     export let data;
 </script>
@@ -26,15 +24,15 @@
             <hr>
             <div class = "content-content">
                 <div class="showcase-faqs">
-                    {#each data.faqsList as block}
+                    {#each data.faqsList as block, i}
                         <div class = "showcase-faqs-item">
 
                             <div class="expansion-menu">
                                 <div class="menu-header">
                                     <h3>{block.question}</h3>
-                                    <button class="toggle-btn">&#x25BC;</button>
+                                    <button class="toggle-btn" on:click={toggleBtn}>&#x25BC;</button>
                                 </div>
-                                <div class="menu-content">
+                                <div class={isActive ? 'menu-content expanded' : 'menu-content'}>
                                     <PortableText content = {block.answer} />
                                 </div>
                             </div>

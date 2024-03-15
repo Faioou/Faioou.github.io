@@ -641,10 +641,6 @@ select {
     align-items: center;
 }
 
-.menu-header h2 {
-    margin: 0;
-}
-
 .toggle-btn {
     background: none;
     border: none;
@@ -657,21 +653,7 @@ select {
     padding: 10px;
 }
 
-.menu-content ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-content ul li {
-    margin-bottom: 5px;
-}
-
-.menu-content ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.expanded .menu-content {
+.expanded {
     display: block;
 }
 
