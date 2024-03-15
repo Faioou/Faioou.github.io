@@ -31,10 +31,10 @@
 
     <Gallery />
 
-    <!-- Partners -->
-    <div class = "partners">
-        <div class = "partners-container">
-            <div class = "partners-title">
+    <!-- Latest news -->
+    <div class = "intro">
+        <div class = "intro-container">
+            <div class = "intro-title">
                 <h1>Recentes</h1>
             </div>
             <hr>
