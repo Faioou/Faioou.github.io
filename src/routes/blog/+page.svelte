@@ -20,7 +20,7 @@
                 <div class="showcase-faqs">
                     {#each data.postsList as block}
                         <div class = "showcase-faqs-item">
-                            <h2>{block.title}</h2>
+                            <a href = {`/blog/post/${block.slug.current}`}><h2>{block.title}</h2></a>
                             <PortableText content = {block.description} />
                             <p>{block.publishedAt}</p>
                         </div>
