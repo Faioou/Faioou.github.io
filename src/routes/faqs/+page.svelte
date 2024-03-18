@@ -5,6 +5,7 @@
 
     let isActive = [];
 
+    // Update the value of 'isActive' from True to False at button click
     function toggleBtn(index) {
         isActive[index] = !isActive[index];
     }
@@ -32,7 +33,6 @@
                                     <!--
                                         on:click={() => toggleBtn(i)}: This syntax uses an arrow function as the event handler.
                                         The arrow function is executed only when the element is clicked, and it then calls the toggleBtn function with the argument i.
-                                        This is the correct way to handle events in Svelte when you need to pass arguments to the event handler function.
                                     -->
                                     <button class={isActive[i] ? 'toggle-btn active' : 'toggle-btn'} on:click={() => toggleBtn(i)}>&#x25BA;</button>
                                 </div>
