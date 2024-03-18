@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sanity/client": "^6.4.5"
+		"@sanity/client": "^6.4.5",
+		"follow-redirects": "^1.15.6"
 	}
 }
