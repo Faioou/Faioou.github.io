@@ -20,7 +20,7 @@ const navbarFunction = () => {
             if (link.style.animation) { // if animation is set, do nothing else, apply config --> this checks if navbar is open or not
                 link.style.animation = '';
             } else {
-                link.style.animation = `navbarFade 0.5s ease forwards ${index / 2 + 1}s`; // divide index by 5 to add a delay in the fade
+                link.style.animation = `navbarFade 0.2s ease forwards ${index / 2 + 1}s`; // divide index by 5 to add a delay in the fade
             }
         });
 
@@ -28,7 +28,7 @@ const navbarFunction = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navbarFade 0.5s ease forwards ${index / 2 + 1}s`;
+                link.style.animation = `navbarFade 0.2s ease forwards ${index / 2 + 1}s`;
             }
         });
 
