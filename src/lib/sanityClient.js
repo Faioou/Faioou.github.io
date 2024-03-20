@@ -1,11 +1,11 @@
-import { createClient } from "@sanity/client"
-import { PUBLIC_SANITY_PRJ_ID } from '$env/dynamic/public'
+// import { createClient } from "@sanity/client"
+// import { PUBLIC_SANITY_PRJ_ID } from '$env/dynamic/public'
 
-const client = createClient({
-    projectId: PUBLIC_SANITY_PRJ_ID,
-    dataset: "production",
-    apiVersion: "2021-10-21",
-    useCdn: false
-})
+// const client = createClient({
+//     projectId: PUBLIC_SANITY_PRJ_ID,
+//     dataset: "production",
+//     apiVersion: "2021-10-21",
+//     useCdn: false
+// })
 
-export default client;
+// export default client;
