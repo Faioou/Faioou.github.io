@@ -6,6 +6,8 @@
     import Button from '$lib/components/Button.svelte';
     import PartnersCarousel from '$lib/components/PartnersCarousel.svelte';
 
+    import pic4 from '$lib/assets/pic4.jpg';
+
     export let data;
 </script>
 
@@ -35,9 +37,21 @@
     <div class = "intro">
         <div class = "intro-container">
             <div class = "intro-title">
-                <h1>Recentes</h1>
+                <h1>Testemunhos</h1>
             </div>
             <hr>
+            <div class="testemony-container">
+                <div class="testemony-content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o5ycjPqf94Y?si=JXwMkWNq6SWuH2fj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="testemony-content">
+                    <img src="{pic4}" alt="">
+                    <p>
+                        <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</i>
+                        - <b>Maria Santos</b>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
