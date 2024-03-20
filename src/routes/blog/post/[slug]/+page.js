@@ -7,7 +7,7 @@
 //     apiVersion: "2021-10-21",
 //     useCdn: false
 // })
-import client from '$libsanityClient';
+import client from '$lib/sanityClient';
 
 export async function load(data) {
     // const posts = await client.fetch(`*[_type == 'blog']{title, slug, publishedAt, description, content}`);
