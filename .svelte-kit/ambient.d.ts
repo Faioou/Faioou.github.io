@@ -27,27 +27,23 @@
  */
 declare module '$env/static/private' {
 	export const GJS_DEBUG_TOPICS: string;
-	export const npm_package_dev: string;
 	export const LC_TIME: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
 	export const XDG_SESSION_TYPE: string;
 	export const npm_node_execpath: string;
-	export const npm_package_resolved: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
 	export const OLDPWD: string;
 	export const CHROME_DESKTOP: string;
 	export const LESS: string;
-	export const npm_package_optional: string;
 	export const DESKTOP_SESSION: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const npm_package_json: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
 	export const ZSH: string;
 	export const LSCOLORS: string;
-	export const npm_package_engines_node: string;
 	export const GTK_MODULES: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const PAGER: string;
@@ -55,7 +51,6 @@ declare module '$env/static/private' {
 	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
-	export const npm_package_integrity: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
@@ -103,13 +98,11 @@ declare module '$env/static/private' {
 	export const QT_ACCESSIBILITY: string;
 	export const GDMSESSION: string;
 	export const LC_MEASUREMENT: string;
-	export const npm_package_dev_optional: string;
 	export const LC_IDENTIFICATION: string;
 	export const GJS_DEBUG_OUTPUT: string;
 	export const QT_IM_MODULE: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
-	export const npm_package_peer: string;
 	export const PWD: string;
 	export const npm_execpath: string;
 	export const XDG_DATA_DIRS: string;
@@ -119,6 +112,7 @@ declare module '$env/static/private' {
 	export const LC_PAPER: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -131,7 +125,7 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-	
+	export const PUBLIC_SANITY_PRJ_ID: string;
 }
 
 /**
@@ -149,27 +143,23 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		GJS_DEBUG_TOPICS: string;
-		npm_package_dev: string;
 		LC_TIME: string;
 		USER: string;
 		npm_config_user_agent: string;
 		XDG_SESSION_TYPE: string;
 		npm_node_execpath: string;
-		npm_package_resolved: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
 		OLDPWD: string;
 		CHROME_DESKTOP: string;
 		LESS: string;
-		npm_package_optional: string;
 		DESKTOP_SESSION: string;
 		TERM_PROGRAM_VERSION: string;
 		npm_package_json: string;
 		GIO_LAUNCHED_DESKTOP_FILE: string;
 		ZSH: string;
 		LSCOLORS: string;
-		npm_package_engines_node: string;
 		GTK_MODULES: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		PAGER: string;
@@ -177,7 +167,6 @@ declare module '$env/dynamic/private' {
 		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
-		npm_package_integrity: string;
 		SYSTEMD_EXEC_PID: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
@@ -225,13 +214,11 @@ declare module '$env/dynamic/private' {
 		QT_ACCESSIBILITY: string;
 		GDMSESSION: string;
 		LC_MEASUREMENT: string;
-		npm_package_dev_optional: string;
 		LC_IDENTIFICATION: string;
 		GJS_DEBUG_OUTPUT: string;
 		QT_IM_MODULE: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
-		npm_package_peer: string;
 		PWD: string;
 		npm_execpath: string;
 		XDG_DATA_DIRS: string;
@@ -241,6 +228,7 @@ declare module '$env/dynamic/private' {
 		LC_PAPER: string;
 		INIT_CWD: string;
 		EDITOR: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
@@ -258,6 +246,7 @@ declare module '$env/dynamic/private' {
  */
 declare module '$env/dynamic/public' {
 	export const env: {
+		PUBLIC_SANITY_PRJ_ID: string;
 		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }
