@@ -1,5 +1,5 @@
 import { createClient } from "@sanity/client"
-import { PUBLIC_SANITY_PRJ_ID } from '$env/static/public'
+import { PUBLIC_SANITY_PRJ_ID } from '$env/dynamic/private'
 
 const client = createClient({
     projectId: PUBLIC_SANITY_PRJ_ID,
