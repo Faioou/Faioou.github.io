@@ -261,6 +261,12 @@ hr {
     border-radius: 50%;
 }
 
+/* Testemony - Media Query */
+@media screen and (max-width: 1280px) {
+    .testemony-content {
+        width: 100%;
+    }
+}
 
 
 /* Content */
