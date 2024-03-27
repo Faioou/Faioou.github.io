@@ -42,7 +42,7 @@
             <hr>
             <div class="testemony-container">
                 <div class="testemony-content">
-                    <p><iframe height="auto" src="https://www.youtube.com/embed/o5ycjPqf94Y?si=JXwMkWNq6SWuH2fj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                    <!-- <p><iframe height="auto" src="https://www.youtube.com/embed/o5ycjPqf94Y?si=JXwMkWNq6SWuH2fj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p> -->
                 </div>
                 <div class="testemony-content">
                     <img src="{pic4}" alt="">

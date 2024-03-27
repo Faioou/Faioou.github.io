@@ -19,7 +19,7 @@
                         <p><a href="/">Eventos</a></p>
                         <p><a href="/">Blog</a></p>
                         <p><a href="/">FAQs</a></p>
-                        <p><a href="/" id = "highlight"><span>Quero Tornar-me Sócio</span></a></p>
+                        <p id = "highlight"><span><a href="/">Quero Tornar-me Sócio</a></span></p>
                     </div>
                 </div>
                 <hr>
