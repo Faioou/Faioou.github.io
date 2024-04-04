@@ -1,6 +1,4 @@
 <script>
-    import Header from '$lib/components/Header.svelte';
-    import Footer from '$lib/components/Footer.svelte';
     import PortableText from '$lib/components/PortableText.svelte';
     import { onMount } from 'svelte';
 
@@ -15,7 +13,6 @@
 </script>
 
 <div class = "wrapper">
-    <Header />
 
     <!-- Products -->
     <div class = "content">

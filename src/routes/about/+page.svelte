@@ -1,13 +1,10 @@
 <script>
-    import Header from '$lib/components/Header.svelte';
-    import Footer from '$lib/components/Footer.svelte';
     import PortableText from '$lib/components/PortableText.svelte';
 
     export let data;
 </script>
 
 <div class = "wrapper">
-    <Header />
 
     <!-- About Us-->
     <div class = "content">
@@ -22,5 +19,4 @@
         </div>
     </div>
 
-    <!-- <Footer /> -->
 </div>

@@ -1,7 +1,5 @@
 <script>
-    import Header from '$lib/components/Header.svelte';
     import PortableText from '$lib/components/PortableText.svelte'
-    import Footer from '$lib/components/Footer.svelte';
 
     let isActive = [];
 
@@ -14,7 +12,6 @@
 </script>
 
 <div class = "wrapper">
-    <Header />
 
     <!-- FAQs -->
     <div class = "content">
@@ -48,5 +45,4 @@
         </div>
     </div>
 
-    <!-- <Footer /> -->
 </div>

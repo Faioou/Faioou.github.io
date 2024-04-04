@@ -1,14 +1,10 @@
 <script>
-    import Header from '$lib/components/Header.svelte';
-    import Gallery from '$lib/components/Gallery.svelte';
-    import Footer from '$lib/components/Footer.svelte';
     import PortableText from '$lib/components/PortableText.svelte';
 
     export let data;
 </script>
 
 <div class = "wrapper">
-    <Header />
 
     <!-- Events -->
     <div class = "content">
@@ -31,6 +27,5 @@
         </div>
     </div>
 
-    <!-- <Footer /> -->
 </div>
 
