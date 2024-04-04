@@ -4,8 +4,8 @@
     import Gallery from '$lib/components/Gallery.svelte';
     import Footer from '$lib/components/Footer.svelte';
     import Button from '$lib/components/Button.svelte';
-    import PartnersCarousel from '$lib/components/PartnersCarousel.svelte';
 
+    // Temp
     import pic4 from '$lib/assets/pic4.jpg';
 
     export let data;
@@ -55,5 +55,5 @@
         </div>
     </div>
 
-    <Footer content = {data} />
+    <!-- <Footer content = {data} /> -->
 </div>
