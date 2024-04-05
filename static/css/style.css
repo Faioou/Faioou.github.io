@@ -1,5 +1,7 @@
 /* Defaults */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 html {
     font-size: 100%;
@@ -20,24 +22,35 @@ body {
 }
 
 :root {
-    --pink: #F5A9E1;
+    --pink: #FF69B4;
     --light-grey: #F2F2F2;
     --dark-grey: #A4A4A4;
 }
 
 h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+h2 {
+    color: var(--dark-grey);
 }
 
 hr {
-    margin-left: 0;
-    margin-right: 0;
+    width: 50%;
+    margin: auto;
     background-color: var(--dark-grey);
     opacity: 50%;
 }
 
 #highlight span {
-    padding: 0.3rem 0.5rem;
+    /* padding: 0.3rem 0.5rem; */
+    padding: 0.6rem;
     border-radius: 25px;
     background-color: var(--pink);
 }
@@ -88,7 +101,7 @@ hr {
 
 .navbar-items {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .navbar-item {
@@ -195,26 +208,11 @@ hr {
 }
 
 /* Intro */
-.intro {
-    padding: 4rem 0 4rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.intro-container {
-    width: 60%;
-}
-
-.intro-title {
-    display: flex;
-    justify-content: space-around;
-}
-
 .intro-content {
     padding: 2rem;
     display: flex;
     justify-content: space-around;
-    text-align: justify;
+    text-align: left;
 }
 
 .intro-donate {
@@ -226,14 +224,6 @@ hr {
     align-items: center;
     margin-bottom: 30px;
 }
-
-/* Intro - Media Query */
-@media screen and (max-width: 1280px) {
-    .intro-container {
-        width: 80%;
-    }
-}
-
 
 .testemony-container {
     width: 100%;
@@ -250,7 +240,6 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-
 }
 
 .testemony-content img {
@@ -265,10 +254,9 @@ hr {
     }
 }
 
-
 /* Content */
 .content {
-    padding-top: 10vh;
+    padding: 10vh 0 10vh 0;
     display: flex;
     justify-content: space-around;
 }
@@ -278,7 +266,6 @@ hr {
 }
 
 .content-title {
-    height: 10vh;
     display: flex;
     justify-content: space-around;
 }
@@ -289,7 +276,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: justify;
+    text-align: left;
 }
 
 .content-content-image {
@@ -454,7 +441,67 @@ select {
     }
 }
 
+/* Contacts */
+.contacts-info {
+    padding: 4vh;
+    margin-bottom: 2rem;
+    display: flex;
+    line-height: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.contacts-info-item-main {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-info-item {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-info-item a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
 /* FAQs */
+.expansion-item {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease; /* Add transition for smooth rotation */
+}
+
+.active {
+    transform: rotate(90deg);/* Rotate the button 90 degrees when clicked */
+}
+
+.item-content {
+    display: none;
+    padding: 10px;
+}
+
+.expanded {
+    display: block;
+}
+
 .showcase-faqs {
     width: 100%;
     display: flex;
@@ -491,10 +538,8 @@ select {
     width: 70%;
 }
 
-.footer-container-content {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+.footer-container hr {
+    width: 100%;
 }
 
 .footer-container-items {
@@ -514,7 +559,7 @@ select {
 
 .footer-social svg {
     height: 1.5rem;
-    fill: var(--pink);
+    fill: #000;
 }
 
 /* Footer - Media Query */
@@ -530,92 +575,6 @@ select {
     .footer-container-items {
         padding-bottom: 1rem;
         flex-direction: column;
-    }
-}
-
-/* Site Map */
-.site-map-container {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-}
-
-.site-map-content {
-    width: 40%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.site-map-content a {
-    text-decoration: none;
-    color: #000;
-}
-
-/* Site Map - Media Query */
-@media screen and (max-width: 1280px) {
-    .site-map-container { line-height: 2; }
-
-    .site-map-content {
-        width: 100%;
-    }
-}
-
-/* Contacts */
-.contacts-container {
-    padding: 1rem;
-}
-
-.contacts-content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts-content a {
-    color: var(--dark-grey);
-    text-decoration: none;
-}
-
-.contacts-content a:hover {
-    text-decoration: underline;
-}
-
-.contacts-content-address-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-}
-
-.contacts-content-address  {
-    width: 50%;
-}
-
-.contacts-content-address a {
-    color: var(--dark-grey);
-    text-decoration: none;
-}
-
-.contacts-content-address a:hover {
-    text-decoration: underline;
-}
-
-/* Contacts - Media Query */
-@media screen and (max-width: 1280px) {
-    .contacts-container {
-        width: 100%;
-    }
-
-    .contacts-content {
-        width: 100%;
-    }
-
-    .contacts-content-address-container {
-        flex-direction: column;
-    }
-
-    .contacts-content-address  {
-        width: 100%;
     }
 }
 
@@ -646,47 +605,4 @@ select {
     .partners-content {
         grid-template-columns: 1fr;
     }
-}
-
-
-
-
-
-
-
-
-
-/*---------------*/
-.expansion-item {
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.item-header {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toggle-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: transform 0.3s ease; /* Add transition for smooth rotation */
-}
-
-.active {
-    transform: rotate(90deg);/* Rotate the button 90 degrees when clicked */
-}
-
-.item-content {
-    display: none;
-    padding: 10px;
-}
-
-.expanded {
-    display: block;
 }

@@ -16,9 +16,9 @@
     <Banner />
 
     <!-- Intro-->
-    <div class = "intro">
-        <div class = "intro-container">
-            <div class = "intro-title">
+    <div class = "content">
+        <div class = "content-container">
+            <div class = "content-title">
                 <h1>Testemunhar É Ajudar</h1>
             </div>
             <hr>
@@ -34,9 +34,9 @@
     <Gallery />
 
     <!-- Latest news -->
-    <div class = "intro">
-        <div class = "intro-container">
-            <div class = "intro-title">
+    <div class = "content">
+        <div class = "content-container">
+            <div class = "content-title">
                 <h1>Testemunhos</h1>
             </div>
             <hr>
