@@ -2,7 +2,6 @@
     import Header from '$lib/components/Header.svelte';
     import Banner from '$lib/components/Banner.svelte';
     import Gallery from '$lib/components/Gallery.svelte';
-    import Footer from '$lib/components/Footer.svelte';
     import Button from '$lib/components/Button.svelte';
 
     // Temp
@@ -33,7 +32,7 @@
 
     <Gallery />
 
-    <!-- Latest news -->
+    <!-- Testemonies -->
     <div class = "content">
         <div class = "content-container">
             <div class = "content-title">
@@ -55,5 +54,4 @@
         </div>
     </div>
 
-    <!-- <Footer content = {data} /> -->
 </div>
