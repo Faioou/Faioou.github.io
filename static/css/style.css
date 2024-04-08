@@ -56,11 +56,11 @@ hr {
 }
 
 /* Defaults - Media Query */
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
     body {
         font-size: 0.8rem;
     }
-}
+} */
 
 /* Navbar */
 .navbar {

@@ -5,7 +5,7 @@
         const navbarBurguer = document.querySelector('.navbar-burguer');
         const navbarLinks = document.querySelector('.navbar-items');
         const navbarUniqueLinks = document.querySelectorAll('.navbar-items li');
-        const navbarLinksItems = document.querySelectorAll('.navbar-link a');
+        const navbarLinksItems = document.querySelectorAll('.navbar-link');
 
         // on click, enable 'navbar-burguer-active' class
         navbarLinks.classList.toggle('navbar-burguer-active');
@@ -27,7 +27,25 @@
         // switch to close sign
         navbarBurguer.classList.toggle('toggle');
 
+        // Add event listener to each link to remove 'navbar-burguer-active' class when clicked
+        document.querySelectorAll('.navbar-link').forEach(item => {
+            item.addEventListener('click', () => {
+                const navbarLinks = document.querySelector('.navbar-items');
+                const navbarBurguer = document.querySelector('.navbar-burguer');
+
+                // Check if the navbar is active, if so, remove the active class
+                if (navbarLinks.classList.contains('navbar-burguer-active')) {
+                    navbarLinks.classList.remove('navbar-burguer-active');
+                    navbarBurguer.classList.remove('toggle');
+                }
+
+                navbarUniqueLinks.forEach((link, index) => { // 'index' is used to select each link id
+                    link.style.animation = '';
+                });
+            });
+        });
     };
+
 </script>
 
 <header>
@@ -51,12 +69,6 @@
                     <li class = "navbar-item">
                         <a class = "navbar-link" href = "/blog">BLOG</a>
                     </li>
-                    <!-- <li class = "navbar-item">
-                        <a class = "navbar-link" href = "/contacts">CONTACTS</a>
-                    </li> -->
-                    <!-- <li class = "navbar-item">
-                        <a class = "navbar-link" href = "/faqs">FAQs</a>
-                    </li> -->
                     <li class = "navbar-item">
                         <a class = "navbar-link" id = "highlight" href = "https://forms.gle/ACZUpTC84fZFgQ3x8" target = "_blank"><span>QUERO TORNAR-ME SÓCIO</span></a>
                     </li>
