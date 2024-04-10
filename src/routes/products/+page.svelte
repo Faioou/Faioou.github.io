@@ -1,15 +1,30 @@
 <script>
     import PortableText from '$lib/components/PortableText.svelte';
-    import { onMount } from 'svelte';
 
     export let data;
 
-    onMount(() => {
-        // Your script loading logic goes here
-        const script = document.createElement('script');
-        script.src = './js/products-category-filter.js';
-        document.body.appendChild(script);
-    });
+    // Product category filter
+    const updateProductsShowcase = () => {
+        var categoriesList = document.getElementById('test')
+        var category = categoriesList.options[categoriesList.selectedIndex].value
+        var showcaseCards = document.getElementsByClassName("showcase-card");
+
+        // Loop through each element
+        for (var i = 0; i < showcaseCards.length; i++) {
+            var card = showcaseCards[i];
+            var cardId = card.getAttribute("id");
+
+            // If element id equal to category or category is equal to "Todos"
+            if (cardId === category || category === "Todos") {
+                // Show card
+                card.style.display = "block";
+            } else {
+                // Hide card
+                card.style.display = "none";
+            }
+        }
+    }
+
 </script>
 
 <div class = "wrapper">
@@ -22,7 +37,7 @@
             </div>
             <hr>
             <div class = "content-content">
-                <select name="test" id="test" onchange="updateProductsShowcase()">
+                <select name="test" id="test" on:change={updateProductsShowcase}>
                     <option value = "Todos">Todos</option>
                     {#each data.productsList as block}
                         <option value = {block.category}>{block.category}</option>

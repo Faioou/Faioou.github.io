@@ -39,7 +39,7 @@
                     navbarBurguer.classList.remove('toggle');
                 }
 
-                navbarUniqueLinks.forEach((link, index) => { // 'index' is used to select each link id
+                navbarUniqueLinks.forEach((link) => {
                     link.style.animation = '';
                 });
             });
