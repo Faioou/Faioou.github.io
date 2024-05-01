@@ -43,18 +43,16 @@
                         <option value = {block.category}>{block.category}</option>
                     {/each}
                 </select>
-                <div class = "showcase">
-                    <div class = "showcase-container" id = "showcase">
-                        {#each data.productsList as block}
-                            <div class = "showcase-card" id = {block.category}>
-                                <img src="{block.image}" alt="">
-                                <h3>{block.title}</h3>
-                                <PortableText content = {block.description} />
-                                <p id = "highlight"><span>{block.price} €</span></p>
-                                <p class = "category">{block.category}</p>
-                            </div>
-                        {/each}
-                    </div>
+                <div class = "showcase-container" id = "showcase">
+                    {#each data.productsList as block}
+                        <div class = "showcase-card" id = {block.category}>
+                            <img src="{block.image}" alt="">
+                            <h3>{block.title}</h3>
+                            <PortableText content = {block.description} />
+                            <p><b>{block.price} €</b></p>
+                            <p class = "category">{block.category}</p>
+                        </div>
+                    {/each}
                 </div>
             </div>
         </div>
