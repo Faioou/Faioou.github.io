@@ -10,6 +10,17 @@
 <footer>
     <div class = "footer">
         <div class="footer-container">
+            <div class = "submenu-container">
+                <p><b>MAPA DO SITE</b></p>
+                <div class = "submenu-content">
+                    <a href = "/about">Sobre Nós</a>
+                    <a href = "/products">Produtos</a>
+                    <a href = "/events">Eventos</a>
+                    <a href = "/blog">Blog</a>
+                    <a href = "/faqs">FAQs</a>
+                    <a href = "/contacts">Contactos</a>
+                </div>
+            </div>
             <div class = "partners-container">
                 <p><b>PARCEIROS</b></p>
                 <div class = "partners-content">
