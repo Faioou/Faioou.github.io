@@ -39,8 +39,8 @@
             <div class = "content-content">
                 <select name="test" id="test" on:change={updateProductsShowcase}>
                     <option value = "Todos">Todos</option>
-                    {#each data.productsList as block}
-                        <option value = {block.category}>{block.category}</option>
+                    {#each data.categoriesList as block}
+                        <option value = {block.title}>{block.title}</option>
                     {/each}
                 </select>
                 <div class = "showcase-container" id = "showcase">
