@@ -1,10 +1,10 @@
 import client from '$lib/sanityClient';
 
 export async function load() {
+    // Build products list
     const products = await client.fetch(`*[_type == "products"]{title, "imageUrl": image.asset->url, description, price, "category": *[_type == "categories" && _id == ^.category[0]._ref]}`);
-    const categories = await client.fetch(`*[_type == "categories"]{title}`)
-
     let productsList = []
+
     if (products) {
         for (let i = 0;  i < products.length; i++) {
             productsList.push({
@@ -17,16 +17,15 @@ export async function load() {
         }
     }
 
+    // Build categories list
+    const categories = await client.fetch(`*[_type == "categories"]{title}`)
     let categoriesList = []
+
     if (categories) {
-        let uniqueCategories = new Set();
         for (let i = 0;  i < categories.length; i++) {
-            if (!uniqueCategories.has(categories[i].title)) {
-                uniqueCategories.add(categories[i].title);
-                categoriesList.push({
-                    title: categories[i].title,
-                })
-            }
+            categoriesList.push({
+                title: categories[i].title,
+            })
         }
     }
 
