@@ -57,8 +57,13 @@
             </div>
             <div class="navbar-container-items">
                 <ul class = "navbar-items">
-                    <li class = "navbar-item">
+                    <li id = "about-us-link" class = "navbar-item">
                         <a class = "navbar-link" href = "/about">SOBRE NÓS</a>
+                        <div class = "navbar-item-sub-menu">
+                            <p>Sub-Menu 01</p>
+                            <p>Sub-Menu 02</p>
+                            <p>Sub-Menu 03</p>
+                        </div>
                     </li>
                     <li class = "navbar-item">
                         <a class = "navbar-link" href = "/products">PRODUTOS</a>
@@ -82,3 +87,20 @@
         </div>
     </nav>
 </header>
+
+<style>
+    .navbar-item-sub-menu {
+        padding: 1rem 1rem 0 1rem;
+        display: none;
+        line-height: 1;
+        position: absolute;
+        z-index: 5;
+        background-color: #FFF;
+    }
+
+    .navbar-item-sub-menu p { padding: .5rem; }
+
+    #about-us-link:hover .navbar-item-sub-menu {
+        display: block;
+    }
+</style>

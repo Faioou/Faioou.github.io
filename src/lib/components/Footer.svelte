@@ -7,8 +7,8 @@
     const year = date.getFullYear()
 </script>
 
-<footer>
-    <div class = "footer">
+<div class="wrapper wrapper-no-margin">
+    <footer>
         <div class="footer-container">
             <div class = "submenu-container">
                 <p><b>MAPA DO SITE</b></p>
@@ -39,5 +39,108 @@
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>
+
+<style>
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 0.9rem;
+        background-color: var(--light-grey);
+    }
+
+    .footer-container {
+        width: 70%;
+    }
+
+    .footer-container hr {
+        width: 100%;
+    }
+
+    .footer-container-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-social {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-column-gap: 1rem;
+        grid-auto-flow: column;
+    }
+
+    .footer-social svg {
+        height: 1.5rem;
+        fill: #000;
+    }
+
+    .submenu-container {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .submenu-content {
+        display: grid;
+        grid-template-columns: 0.1fr 0.1fr 0.1fr;
+        grid-gap: 10px;
+    }
+
+    .submenu-content a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .partners-container {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .partners-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        justify-items: center;
+        align-items: center;
+    }
+
+    .partners-content img {
+        margin: 1rem;
+        max-width: 100px;
+        filter: grayscale(1);
+    }
+
+    @media screen and (max-width: 1280px) {
+        .footer p {
+            width: 80%;
+        }
+
+        .footer-container {
+            width: 80%;
+        }
+
+        .footer-container-items {
+            padding-bottom: 1rem;
+            flex-direction: column;
+        }
+
+        .submenu-content {
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+
+        .partners-content {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
