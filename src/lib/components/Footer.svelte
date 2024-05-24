@@ -13,12 +13,11 @@
             <div class = "submenu-container">
                 <p><b>MAPA DO SITE</b></p>
                 <div class = "submenu-content">
-                    <a href = "/about">Sobre Nós</a>
+                    <a href = "/about">TEA</a>
                     <a href = "/products">Produtos</a>
                     <a href = "/events">Eventos</a>
                     <a href = "/blog">Blog</a>
-                    <a href = "/faqs">FAQs</a>
-                    <a href = "/contacts">Contactos</a>
+                    <a href = "/faqs">Info</a>
                 </div>
             </div>
             <div class = "partners-container">

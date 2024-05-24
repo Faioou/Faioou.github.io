@@ -1,6 +1,7 @@
 <script>
     import Banner from '$lib/components/Banner.svelte';
     import Button from '$lib/components/Button.svelte';
+    import pic1 from '$lib/assets/pic1.jpg'
 
     export let data;
 </script>
@@ -10,9 +11,16 @@
 <div class = "wrapper">
     <div class = "text-container">
         <h1>Testemunhar É Ajudar</h1>
-        <hr>
         <div class = "text-block">
-            <p>O TESTEMUNHAR É AJUDAR (TEA), tem como fim apoiar o doente oncológico, familiares e amigos, desde o momento em que é diagnosticado o cancro. Este apoio baseia-se no contacto pessoal entre o doente e o voluntário (que vivenciou uma situação semelhante), inclusive com fornecimento de bens materiais ao doente. A doação de bens e apoio à investigação clínica do Centro de Mama – CHUSJ, são também objetivos principais da associação. A associação tem ainda como intuito a organização e desenvolvimento de eventos, workshops, ações de formação e educação médica, bem como atividades culturais e recreativas, sendo para isso possível o intercâmbio com outras associações nacionais e internacionais, com o propósito de representar, perante a administração pública, os interesses dos seus associados.</p>
+            <p>A TESTEMUNHAR É AJUDAR (TEA), tem como fim apoiar o doente oncológico, familiares e amigos, desde o momento em que é diagnosticado o cancro. Este apoio baseia-se no contacto pessoal entre o doente e o voluntário (que vivenciou uma situação semelhante), inclusive com fornecimento de bens materiais ao doente. A doação de bens e apoio à investigação clínica do Centro de Mama – CHUSJ, são também objetivos principais da associação. A associação tem ainda como intuito a organização e desenvolvimento de eventos, workshops, ações de formação e educação médica, bem como atividades culturais e recreativas, sendo para isso possível o intercâmbio com outras associações nacionais e internacionais, com o propósito de representar, perante a administração pública, os interesses dos seus associados.</p>
+        </div>
+
+        <div class="text-block">
+            <div class="gallery">
+                <div class="gallery-item"><img src={pic1} alt=""></div>
+                <div class="gallery-item"><img src={pic1} alt=""></div>
+                <div class="gallery-item"><img src={pic1} alt=""></div>
+            </div>
         </div>
 
         <!-- <div class="intro-donate">
@@ -40,6 +48,28 @@
 </div>
 
 <style>
+    .gallery {
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        align-content: center;
+    }
+
+    .gallery-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        max-width: 350px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
     .quotes-container {
         width: 100%;
         display: grid;
@@ -58,5 +88,9 @@
     .quote-author {
         padding: 0 2rem;
         text-align: right;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .quotes-container { grid-template-columns: repeat(1, 1fr); }
     }
 </style>
