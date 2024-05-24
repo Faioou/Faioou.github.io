@@ -1,6 +1,8 @@
 <script>
     import SanityImage from "$lib/components/SanityImage.svelte";
     export let content;
+
+    console.log(content)
 </script>
 
 {#each content as block}

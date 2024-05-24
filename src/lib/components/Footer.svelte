@@ -120,13 +120,7 @@
     }
 
     @media screen and (max-width: 1280px) {
-        .footer p {
-            width: 80%;
-        }
-
-        .footer-container {
-            width: 80%;
-        }
+        .footer-container { width: 90%; }
 
         .footer-container-items {
             padding-bottom: 1rem;
@@ -138,8 +132,6 @@
             grid-template-columns: 1fr;
         }
 
-        .partners-content {
-            grid-template-columns: 1fr;
-        }
+        .partners-content { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
     }
 </style>

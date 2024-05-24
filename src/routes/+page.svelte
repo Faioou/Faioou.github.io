@@ -39,6 +39,11 @@
             </div>
         </div>
 
+        <h2>Próximos Eventos</h2>
+        <div class="text-block">
+            (no data)
+        </div>
+
         <h2>Testemunhos</h2>
         <div class="text-block">
             <div class="quotes-container">
