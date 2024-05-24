@@ -1,51 +1,5 @@
 <script>
     import logo from '$lib/assets/logo-tea.jpg';
-
-    const navbarBurguerClick = () => {
-        const navbarBurguer = document.querySelector('.navbar-burguer');
-        const navbarLinks = document.querySelector('.navbar-items');
-        const navbarUniqueLinks = document.querySelectorAll('.navbar-items li');
-        const navbarLinksItems = document.querySelectorAll('.navbar-link');
-
-        // on click, enable 'navbar-burguer-active' class
-        navbarLinks.classList.toggle('navbar-burguer-active');
-
-        // change the links color
-        navbarLinksItems.forEach((link) => {
-            link.style.color = "black";
-        })
-
-        // animate links
-        navbarUniqueLinks.forEach((link, index) => { // 'index' is used to select each link id
-            if (link.style.animation) { // if animation is set, do nothing else, apply config --> this checks if navbar is open or not
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navbarFade 0.2s ease forwards ${index / 2 + 1}s`; // divide index by 5 to add a delay in the fade
-            }
-        });
-
-        // switch to close sign
-        navbarBurguer.classList.toggle('toggle');
-
-        // Add event listener to each link to remove 'navbar-burguer-active' class when clicked
-        document.querySelectorAll('.navbar-link').forEach(item => {
-            item.addEventListener('click', () => {
-                const navbarLinks = document.querySelector('.navbar-items');
-                const navbarBurguer = document.querySelector('.navbar-burguer');
-
-                // Check if the navbar is active, if so, remove the active class
-                if (navbarLinks.classList.contains('navbar-burguer-active')) {
-                    navbarLinks.classList.remove('navbar-burguer-active');
-                    navbarBurguer.classList.remove('toggle');
-                }
-
-                navbarUniqueLinks.forEach((link) => {
-                    link.style.animation = '';
-                });
-            });
-        });
-    };
-
 </script>
 
 <header>
@@ -55,13 +9,13 @@
             <a href = "/"><img src = {logo} alt = "Website logo"></a>
             <ul class = "navbar-items">
                 <li id = "about-us-link" class = "navbar-item">
-                    <a class = "navbar-link" href = "/about">TEA</a>
+                    <a class = "navbar-link" href = "">TEA</a>
                     <div class = "navbar-item-sub-menu">
-                        <p><a href="">Estatutos</a></p>
-                        <p><a href="">Órgãos Sociais</a></p>
-                        <p><a href="">História</a></p>
-                        <p><a href="">Missão e Propósito</a></p>
-                        <p><a href="">Iniciativas e Eventos</a></p>
+                        <p><a href="/statutes">Estatutos</a></p>
+                        <p><a href="/socials">Órgãos Sociais</a></p>
+                        <p><a href="/history">História</a></p>
+                        <p><a href="/mission">Missão e Propósito</a></p>
+                        <p><a href="/events">Iniciativas e Eventos</a></p>
                     </div>
                 </li>
                 <li class = "navbar-item">
@@ -71,17 +25,12 @@
                     <a class = "navbar-link" href = "/blog">Blog</a>
                 </li>
                 <li class = "navbar-item">
-                    <a class = "navbar-link" href = "/faqs">Info</a>
+                    <a class = "navbar-link" href = "/infos">Info</a>
                 </li>
                 <!-- <li class = "navbar-item">
                     <a class = "navbar-link" id = "highlight" href = "https://forms.gle/ACZUpTC84fZFgQ3x8" target = "_blank"><span>QUERO TORNAR-ME SÓCIO</span></a>
                 </li> -->
             </ul>
-            <!-- <div class = "navbar-burguer">
-                <div class = "burguer-r1"></div>
-                <div class = "burguer-r2"></div>
-                <div class = "burguer-r3"></div>
-            </div> -->
         </nav>
 
     </div>
@@ -127,22 +76,19 @@
         position: absolute;
         z-index: 5;
         background-color: #FFF;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
 
-    .navbar-item-sub-menu p { padding: .5rem; }
+    .navbar-item-sub-menu a {
+        padding: .5rem;
+        font-size: .9rem;
+        text-decoration: none;
+        color: #000;
+    }
 
     #about-us-link:hover .navbar-item-sub-menu {
         display: block;
-    }
-
-    .navbar-burguer { display: none; }
-
-    .navbar-burguer div {
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        background-color: black;
-        transition: all 0.3s ease;
     }
 
     @media screen and (max-width: 1280px) {

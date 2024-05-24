@@ -79,32 +79,6 @@ hr {
     h2 { font-size: 1.2rem; }
 }
 
-/* Intro */
-.intro-content {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-}
-
-.intro-donate {
-    width: 100%;
-    padding: 4rem 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-/* Intro - Media Query */
-@media screen and (max-width: 1280px) {
-    .intro-content {
-        padding: 1rem;
-    }
-}
-
-
 /* Content */
 .content-content-image {
     display: flex;
@@ -128,22 +102,6 @@ hr {
         padding: 1rem 0 1rem 0;
     }
 }
-
-/* Component: Button */
-.button-container {
-    height: 50px;
-    width: 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 8px;
-    background-color: var(--pink);
-    color: #FFFFFF;
-}
-
-
 
 /* Component: Showcase */
 .showcase-container {

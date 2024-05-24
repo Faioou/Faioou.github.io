@@ -21,7 +21,7 @@ export const dictionary = {
 		"/blog": [4],
 		"/blog/post/[slug]": [5],
 		"/events": [6],
-		"/faqs": [7],
+		"/infos": [7],
 		"/products": [8],
 		"/studio": [9]
 	};

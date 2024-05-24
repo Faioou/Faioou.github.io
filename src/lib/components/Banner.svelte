@@ -13,6 +13,9 @@
         justify-content: center;
         margin-bottom: 4rem;
     }
-    .banner img { max-width: 70%; }
+    .banner img {
+        max-width: 70%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
 
 </style>
