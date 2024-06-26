@@ -24,18 +24,14 @@
             </div>
         </div>
 
+        <h2>Como ajudar?</h2>
         <div class="text-block">
-            <div class="help-info">
-                <div class="help-info-item-main"><h2>Como ajudar?</h2></div>
-                <div class="help-info-item">
-                    <p><b>Transferência Bancária</b></p>
-                    <p>Testemunhar É Ajudar - Núcleo de apoio ao centro de mama do CHUSJ</p>
-                    <p>IBAN:</p>
-                </div>
-                <div class="help-info-item">
-                    <p><b>Associar</b></p>
-                    <p><a href="">Tornar-me sócio</a></p>
-                </div>
+            <div class="help-container">
+                <p><b>Transferência Bancária</b></p>
+                <p>Testemunhar É Ajudar - Núcleo de apoio ao centro de mama do CHUSJ</p>
+                <p>IBAN:</p>
+                <p><b>Associar</b></p>
+                <p><a href="">Tornar-me sócio</a></p>
             </div>
         </div>
 
@@ -84,31 +80,12 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
 
-    .help-info {
-        padding: 4vh;
-        margin: 0 0 4rem;
+    .help-container {
         width: 100%;
-        display: flex;
-        line-height: 1;
+        padding: 2rem;
+        background-color: var(--light-grey);
+        border-radius: 25px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    .help-info-item-main {
-        width: 20%;
-        display: flex;
-        align-items: center;
-    }
-
-    .help-info-item {
-        padding: 0 2rem 0 2rem;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .help-info-item a {
-        text-decoration: none;
-        color: var(--pink);
     }
 
     .quotes-container {
@@ -130,22 +107,6 @@
         .gallery { grid-template-columns: repeat(1, 1fr); }
 
         .gallery-item img { max-width: 300px; }
-
-        .help-info {
-            flex-direction: column;
-        }
-
-        .help-info-item-main {
-            height: 10vh;
-            width: 100%;
-        }
-
-        .help-info-item {
-            padding: 0;
-            height: 15vh;
-            width: 100%;
-            justify-content: center;
-        }
 
         .quotes-container { grid-template-columns: repeat(1, 1fr); }
     }
