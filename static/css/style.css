@@ -36,11 +36,13 @@ hr {
     opacity: 50%;
 }
 
-#highlight span {
+span {
     padding: 0.3rem 0.5rem;
     padding: 0.6rem;
     border-radius: 25px;
     background-color: var(--pink);
+    font-size: 0.7rem;
+    color: #FFF;
 }
 
 .wrapper {
@@ -181,9 +183,5 @@ select {
         padding: 0.5rem 1rem;
         width: 90%;
     }
-}
-
-.blog a {
-    text-decoration: none;
 }
 
