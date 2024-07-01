@@ -14,9 +14,9 @@
             </div>
             <hr>
             <div class = "content-content">
-                <div class="showcase-faqs">
+                <div class="blog">
                     {#each data.postsList as block}
-                        <div class = "showcase-faqs-item">
+                        <div class = "blog-post">
                             <a href = {`/blog/post/${block.slug.current}`} {block}><h2>{block.title}</h2></a>
                             <PortableText content = {block.description} />
                             <p>{block.publishedAt}</p>
