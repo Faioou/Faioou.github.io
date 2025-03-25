@@ -1,0 +1,37 @@
+/* DEFAULTS */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --pink: #FF4BA8;
+    --light-grey: #F2F2F2;
+    --dark-grey: #A4A4A4;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2;
+}
+
+/* TEXT */
+h1 { color: var(--pink); }
+
+h2 { color: var(--dark-grey);}
+
+
+.h2-header {
+    display: flex;
+    justify-content: center;
+}

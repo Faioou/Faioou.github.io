@@ -1,5 +1,4 @@
 import { createClient } from "@sanity/client"
-// import { PUBLIC_SANITY_PRJ_ID } from '$env/dynamic/public'
 
 const client = createClient({
     projectId: "94cqfhj8",
