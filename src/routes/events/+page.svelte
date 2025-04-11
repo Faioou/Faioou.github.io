@@ -39,7 +39,7 @@
         {#each data.eventsList as block}
             <div class="events-content-section">
                 <div class = "text-block">
-                    <h2 class="h2-header">- {block.title} -</h2>
+                    <h2 class="h2-header">{block.title}</h2>
                     <PortableText content = {block.body} />
                 </div>
             </div>

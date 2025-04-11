@@ -5,4 +5,4 @@
 
 <Header />
 <slot></slot>
-<Footer />
+<Footer/>
