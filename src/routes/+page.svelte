@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import Banner from "$lib/components/Banner.svelte";
+    import Events from "$lib/components/Events.svelte";
 
     // List to receive images content
     export let data;
@@ -44,8 +45,9 @@
             </div>
         </div>
 
+        <Events />
+
         <div class="main-content-section">
-            <h2>Parceiros</h2>
             <div class="partners">
                 <div class="partners-container">
                     <div class="partners-track">
@@ -106,6 +108,7 @@
 
     .partners-slide {
         min-width: 100%;
+        padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -1,5 +1,5 @@
 <script>
-    import BlogNavBar from "$lib/components/BlogNavBar.svelte"
+    // import BlogNavBar from "$lib/components/BlogNavBar.svelte"
     import PortableText from '$lib/components/PortableText.svelte'
 
     export let data
