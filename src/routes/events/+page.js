@@ -1,6 +1,8 @@
 import client from '$lib/sanityClient';
 
 export async function load() {
+
+    // Build events list
     const events = await client.fetch(`*[_type == 'events']{title, body}`);
 
     if (events) {
