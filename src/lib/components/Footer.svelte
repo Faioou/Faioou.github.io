@@ -47,7 +47,7 @@
 
     .footer-navbar-social svg {
         height: 1.2rem;
-        color: var(--pink-dark);
+        fill: var(--pink-dark);
     }
 
     @media screen and (max-width: 1280px) {

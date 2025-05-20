@@ -27,10 +27,12 @@
 
 <style>
     .events-content {
+        text-align: center;
         background-color: var(--pink-light);
     }
 
     .events-container {
+        margin: 4rem 0;
         width: 100%;
         display: flex;
         justify-content: center;

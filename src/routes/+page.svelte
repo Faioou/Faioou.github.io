@@ -58,14 +58,6 @@
         flex-direction: column;
     }
 
-    /* .main-content {
-        width: 60%;
-    } */
-
-    /* .main-content-section {
-        padding: 3rem 0 3rem 0;
-    } */
-
     .partners {
         padding: 4rem 0;
         width: 100%;
