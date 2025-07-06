@@ -10,7 +10,7 @@
         <div class="header-navbar">
 
             <div class="header-navbar-menu">
-                <a href="">TEA  ⌄</a>
+                <a href="/">TEA  ⌄</a>
                 <!-- <div class = "navbar-item-sub-menu">
                     <p><a href="/statutes">Estatutos</a></p>
                     <p><a href="/socials">Órgãos Sociais</a></p>
