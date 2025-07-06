@@ -37,6 +37,7 @@
 
 <style>
     footer {
+        margin-top: 2rem;
         padding: 1rem;
         width: 100%;
         height: fit-content;
