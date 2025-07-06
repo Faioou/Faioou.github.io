@@ -18,11 +18,11 @@
                     <p><a href="/mission">Missão e Propósito</a></p>
                     <p><a href="/events">Iniciativas e Eventos</a></p>
                 </div> -->
-                <a href="/events">Eventos</a>
-                <a href="/testimonies">Testemunhos</a>
-                <a href="/products">Produtos</a>
+                <a href="/eventos">Eventos</a>
+                <a href="/testemunhos">Testemunhos</a>
+                <a href="/produtos">Produtos</a>
                 <a href="/blog">Blog</a>
-                <a href="/infos">Infos</a>
+                <a href="/info">Info</a>
             </div>
 
             
