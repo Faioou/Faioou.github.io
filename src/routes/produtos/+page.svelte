@@ -68,6 +68,26 @@
         padding: 3rem 0 3rem 0;
     }
 
+    .select-box-container { margin-bottom: 1rem; }
+
+    .select-box-container select {
+        height: 36px;
+        padding: 0 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        color: #333;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s;
+        cursor: pointer;
+    }
+
+    .select-box-container select:focus {
+        border: 1.5px solid var(--pink-dark);
+        box-shadow: 0 0 0 2px rgba(255, 0, 128, 0.1);
+    }
+
     .showcase-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

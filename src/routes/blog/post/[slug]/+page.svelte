@@ -5,42 +5,29 @@
     export let data
 </script>
 
-<div class = "wrapper">
-
-    <!-- Post -->
-    <div class = "blog">
-        <BlogNavBar />
-        <header>
+<div class = "post">
+    <div class="post-content">
+        <div class="post-content-section">
             <h2>{data.postContent.title}</h2>
-        </header>
-        <div class = "post-content">
-            <PortableText content = {data.postContent.content} />
+            <div class = "post-content">
+                <PortableText content = {data.postContent.content} />
+            </div>
         </div>
     </div>
-
 </div>
 
 <style>
-    /* Blog */
-    .blog {
-        padding: 0 2rem 2rem;
-        height: auto;
-        width: 50%;
+    .post {
+        width: 100%;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
-        color: #000;
+        align-items: center;
     }
 
-    header { margin-top: 2rem; }
+    .post-content { width: 60%; background-color: red; }
 
-    .post-content {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    @media (max-width: 1280px) {
-        .blog {
-            width: 100%;
-        }
+    .post-content-section {
+        padding: 3rem 0 3rem 0;
     }
 </style>
