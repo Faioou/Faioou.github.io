@@ -25,7 +25,7 @@
         align-items: center;
     }
 
-    .post-content { width: 60%; background-color: red; }
+    .post-content { width: 60%; }
 
     .post-content-section {
         padding: 3rem 0 3rem 0;

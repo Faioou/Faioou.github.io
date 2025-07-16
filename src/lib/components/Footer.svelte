@@ -16,13 +16,11 @@
                 <p><b>Sede</b></p>
                 <p>Alameda Professor Hernâni Monteiro</p>
                 <p>4200-319 Porto</p>
-                <p><a href = "https://maps.app.goo.gl/5yhunCAbiQfg8P918">[ver Google Maps]</a></p>
             </div>
             <div class = "footer-contacts-item">
                 <p><b>Casa TEA</b></p>
                 <p>Rua de Crestins 18</p>
                 <p>4470 Moreira da Maia</p>
-                <p><a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver Google Maps]</a></p>
             </div>
         </div>
         <hr>

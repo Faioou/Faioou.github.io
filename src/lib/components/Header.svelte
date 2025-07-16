@@ -12,16 +12,21 @@
             <div class="header-navbar-menu">
                 <a href="/">TEA  ⌄</a>
                 <!-- <div class = "navbar-item-sub-menu">
-                    <p><a href="/statutes">Estatutos</a></p>
-                    <p><a href="/socials">Órgãos Sociais</a></p>
-                    <p><a href="/history">História</a></p>
-                    <p><a href="/mission">Missão e Propósito</a></p>
-                    <p><a href="/events">Iniciativas e Eventos</a></p>
+                    <p><a href="/statutes">Estatutos</a></p> - Link to download PDF - Estatutos
+                    <p><a href="/socials">Órgãos Sociais</a></p> - Page with list of members
+                    <p><a href="/history">História</a></p> - Page with history of TEA
+                    <p><a href="/mission">Missão e Propósito</a></p> - Page with mission and purpose of TEA
                 </div> -->
-                <a href="/eventos">Eventos</a>
+                <a href="/">Ajuda  ⌄</a>
+                <!-- <div class = "navbar-item-sub-menu">
+                    <p><a href="/">Sócios</a></p>
+                    <p><a href="/">Donativos</a></p>
+                    <p><a href="/">Voluntariado</a></p>
+                </div> -->
+                <a href="/atividades">Atividades</a>
                 <a href="/testemunhos">Testemunhos</a>
-                <a href="/produtos">Produtos</a>
-                <a href="/blog">Blog</a>
+                <a href="/loja">Loja</a>
+                <!-- <a href="/blog">Blog</a> -->
                 <a href="/info">Info</a>
             </div>
 

@@ -38,7 +38,33 @@
                         {/each}
                     </div>
                 </div>
-            </div>   
+            </div>
+            <div class = "contacts">
+                <h2>Contactos</h2>
+                <div class = "contacts-content">
+                    <div class = "contacts-item">
+                        <p><b>Contactos</b></p>
+                        <p>geral@testemunhareajudar.pt</p>
+                        <p>+3510000000</p>
+                    </div>
+                    <div class = "contacts-item">
+                        <p><b>Sede</b></p>
+                        <p>Alameda Professor Hernâni Monteiro</p>
+                        <p>4200-319 Porto</p>
+                        <p><a href = "https://maps.app.goo.gl/5yhunCAbiQfg8P918">[ver Google Maps]</a></p>
+                    </div>
+                    <div class = "contacts-item">
+                        <p><b>Casa TEA</b></p>
+                        <p>Rua de Crestins 18</p>
+                        <p>4470 Moreira da Maia</p>
+                        <p><a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver Google Maps]</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class = "faqs">
+                <h2>Donativos</h2>
+                
+            </div>
         </div>
     </div>
 </div>
@@ -132,6 +158,26 @@
 
     :global(.faqs-list-item p) {
         color: var(--pink-light);
+    }
+
+    .contacts {
+        padding: 2rem;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts-item {
+        padding: 1rem;
     }
 
     @media screen and (max-width: 1280px) {
