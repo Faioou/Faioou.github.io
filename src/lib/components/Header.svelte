@@ -10,19 +10,23 @@
         <div class="header-navbar">
 
             <div class="header-navbar-menu">
-                <a href="/">TEA  ⌄</a>
-                <!-- <div class = "navbar-item-sub-menu">
-                    <p><a href="/statutes">Estatutos</a></p> - Link to download PDF - Estatutos
-                    <p><a href="/socials">Órgãos Sociais</a></p> - Page with list of members
-                    <p><a href="/history">História</a></p> - Page with history of TEA
-                    <p><a href="/mission">Missão e Propósito</a></p> - Page with mission and purpose of TEA
-                </div> -->
-                <a href="/">Ajuda  ⌄</a>
-                <!-- <div class = "navbar-item-sub-menu">
-                    <p><a href="/">Sócios</a></p>
-                    <p><a href="/">Donativos</a></p>
-                    <p><a href="/">Voluntariado</a></p>
-                </div> -->
+                <div class="navbar-item-with-submenu">
+                    <a href="/">TEA  ⌄</a>
+                    <div class="navbar-item-sub-menu">
+                        <p><a href="/estatutos">Estatutos</a></p>
+                        <p><a href="/orgaos">Órgãos Sociais</a></p>
+                        <p><a href="/historia">História</a></p>
+                        <p><a href="/missao">Missão e Propósito</a></p>
+                    </div>
+                </div>
+                <div class="navbar-item-with-submenu">
+                    <a href="/">Ajuda  ⌄</a>
+                    <div class = "navbar-item-sub-menu">
+                        <p><a href="/">Sócios</a></p>
+                        <p><a href="/">Donativos</a></p>
+                        <p><a href="/">Voluntariado</a></p>
+                    </div>
+                </div>
                 <a href="/atividades">Atividades</a>
                 <a href="/testemunhos">Testemunhos</a>
                 <a href="/loja">Loja</a>
@@ -72,5 +76,27 @@
         padding: 0.5rem 1rem;
         text-decoration: none;
         font-weight: 500;
+    }
+
+    .navbar-item-with-submenu {
+        position: relative;
+        display: inline-block;
+    }
+
+    .navbar-item-sub-menu {
+        padding: 0.5rem;
+        width: 200px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: left;
+        z-index: 10;
+    }
+
+    .navbar-item-with-submenu:hover .navbar-item-sub-menu {
+        display: block;
     }
 </style>
