@@ -14,19 +14,25 @@
                     <p><b>Assembleia Geral</b></p>
                     <div class="members-list">
                         <div class="member">
-                            <img src="/avatar.png" alt="">
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
                             <p>José Luís Rosas Fougo</p>
-                            <p>Presidente</p>
+                            <p><b>Presidente</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
                             <p>Joana Peixoto Fernandes</p>
-                            <p>1ª Secretária</p>
+                            <p><b>1ª Secretária</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
                             <p>Inês Rocha de Castro</p>
-                            <p>2ª Secretária</p>
+                            <p><b>2ª Secretária</b></p>
                         </div>
                     </div>
                 </div>
@@ -35,29 +41,39 @@
                     <p><b>Direção</b></p>
                     <div class="members-list">
                         <div class="member">
-                            <img src="/avatar.png" alt="">
-                            <p>Maria Helena de Sousa Teixeira</p>
-                            <p>Presidente</p>
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
+                            <p>Mª Helena de Sousa T.</p>
+                            <p><b>Presidente</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
-                            <p>Maria Helena Pilroto Rodrigues</p>
-                            <p>Vice-Presidente</p>
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
+                            <p>Mª Helena P. Rodrigues</p>
+                            <p><b>Vice-Presidente</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
-                            <p>Anabela Santos Sousa Oliveira</p>
-                            <p>Tesoureiro</p>
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
+                            <p>Anabela S. Sousa Oliveira</p>
+                            <p><b>Tesoureiro</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
-                            <p>Benvinda Conceição Loureiro M. Gomes</p>
-                            <p>Secretária</p>
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
+                            <p>Benvinda C. L. M. Gomes</p>
+                            <p><b>Secretária</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
                             <p>Ana Maria Pereira Guedes</p>
-                            <p>Vogal</p>
+                            <p><b>Vogal</b></p>
                         </div>
                     </div>
                 </div>
@@ -66,18 +82,24 @@
                     <p><b>Conselho Fiscal</b></p>
                     <div class="members-list">
                         <div class="member">
-                            <img src="/avatar.png" alt="">
-                            <p>Carla Susana Moreira Castro Martins</p>
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
+                            <p>Carla S. M. Castro Martins</p>
                             <p><b>Presidente</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
                             <p>Ana Cristina Marinho</p>
                             <p><b>1ª Secretária</b></p>
                         </div>
                         <div class="member">
-                            <img src="/avatar.png" alt="">
-                            <p>Dalila Francisca Moreira Gomes</p>
+                            <div class="member-photo">
+                                <img src="/avatar.png" alt="">
+                            </div>
+                            <p>Dalila F. Moreira Gomes</p>
                             <p><b>2ª Secretária</b></p>
                         </div>
                     </div>
@@ -126,7 +148,12 @@
         color: var(--pink-light);
     }
 
-    .member img {
+    .member-photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .member-photo img {
         width: 100px;
     }
 
