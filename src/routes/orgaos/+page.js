@@ -2,18 +2,20 @@ import client from '$lib/sanityClient';
 
 export async function load() {
 
-    // Build events list
-    const events = await client.fetch(`*[_type == 'events']{title, body}`);
+    // Build socials list
+    const socials = await client.fetch(`*[_type == 'socials']{name, title, area, "imageUrl": image.asset->url}`);
 
-    if (events) {
-        let eventsList = []
-        for (let i = 0;  i < events.length; i++) {
-            eventsList.push({
-                title: events[i].title,
-                body: events[i].body,
+    if (socials) {
+        let socialsList = []
+        for (let i = 0;  i < socials.length; i++) {
+            socialsList.push({
+                name: socials[i].name,
+                title: socials[i].title,
+                area: socials[i].area,
+                photo: socials[i].imageUrl
             })
         }
-        return {eventsList}
+        return {socialsList}
     }
         return {
         status: 500,
