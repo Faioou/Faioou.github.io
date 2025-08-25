@@ -6,15 +6,14 @@
 <div class = "mission">
     <div class="mission-content">
         <div class="mission-content-section">
-            <div class = "text-block">
-                {#each data.missionList as block}
+            {#each data.missionList as block}
+                <div class = "text-block">
                     <h2>{block.title}</h2>
                     <img src="{block.image}" alt="">
                     <PortableText content ={block.body} />
-                {/each}
-            </div>
+                </div>
+            {/each}
         </div>
-
     </div>
 </div>
 

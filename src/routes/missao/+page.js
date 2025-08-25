@@ -14,6 +14,7 @@ export async function load() {
                 image: mission[i].imageUrl
             })
         }
+        missionList.reverse() // Show most recent first
         return {missionList}
     }
         return {

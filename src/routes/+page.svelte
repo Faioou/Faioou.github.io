@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import Banner from "$lib/components/Banner.svelte";
-    import Events from "$lib/components/Events.svelte";
+    import Highlights from "$lib/components/Highlights.svelte";
 
     // List to receive images content
     export let data;
@@ -36,6 +36,7 @@
     <div class="main-content">
         <div class="main-content-section">
             <div class="partners">
+                <h2>Parceiros</h2>
                 <div class="partners-container">
                     {#each data.partnersList as item}
                         <a href="{item.url}">
@@ -46,7 +47,7 @@
             </div>
         </div>
 
-        <Events content = {data.eventsList}/>
+        <Highlights />
     </div>
 </main>
 
@@ -61,7 +62,7 @@
     .partners {
         padding: 4rem 0;
         width: 100%;
-        background-color: #FFFFFF;
+        text-align: center;
     }
 
     .partners-container {
