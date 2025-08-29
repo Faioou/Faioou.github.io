@@ -1,5 +1,5 @@
 <script>
-    import banner from '$lib/assets/banner.jpg';
+    import banner from '$lib/assets/banner-2.jpg';
 
     function openLink(url) {
         window.open(url, '_blank');
