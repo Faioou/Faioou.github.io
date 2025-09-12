@@ -29,7 +29,7 @@
                 </div>
                 <a href="/atividades">Atividades</a>
                 <a href="/testemunhos">Testemunhos</a>
-                <a href="/loja">Loja</a>
+                <a href="/merchandising">Merchandising</a>
                 <!-- <a href="/blog">Blog</a> -->
                 <a href="/info">Info</a>
             </div>
