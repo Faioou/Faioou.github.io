@@ -66,17 +66,6 @@
     </div>
 </div>
 
-<div class="info">
-    <div class="info-content">
-        <div class="info-content-section">            
-            <div class = "faqs">
-                <h2>Donativos</h2>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
 <style>
     .info { 
         width: 100%;
