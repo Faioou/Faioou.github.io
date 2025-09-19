@@ -17,6 +17,20 @@ export async function load() {
         }
     }
 
+    // Build homepage
+    const homepage = await client.fetch(`*[_type == 'homepage']{title, body, "imageUrl": image.asset->url}`);
+    let homepageList = []
+
+    if (homepage) {
+        for (let i = 0;  i < homepage.length; i++) {
+            homepageList.push({
+                title: homepage[i].title,
+                body: homepage[i].body,
+                image: homepage[i].imageUrl
+            })
+        }
+    }
+
     // Build events list
     const events = await client.fetch(`*[_type == 'events']{title, description, body, date}`);
     let eventsList = []
@@ -32,8 +46,8 @@ export async function load() {
         }
     }
 
-    if (partnersList && eventsList) {
-        return {partnersList, eventsList}
+    if (partnersList && eventsList && homepageList) {
+        return {partnersList, eventsList, homepageList}
     }
         return {
         status: 500,

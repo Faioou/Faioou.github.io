@@ -7,7 +7,7 @@
     export let data;
 </script>
 
-<Banner />
+<Banner content = {data.homepageList}/>
 
 <main class="main">
     <div class="main-content">
