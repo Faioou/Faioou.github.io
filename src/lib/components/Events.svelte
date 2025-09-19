@@ -1,5 +1,4 @@
 <script>
-    import PortableText from "$lib/components/PortableText.svelte"
     export let content
 </script>
 
