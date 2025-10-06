@@ -32,7 +32,6 @@
                 <p>Além destes exemplos, participamos em diversos momentos relacionados com
                 oncologia, inclusive em instituições privadas, com o intuito de informar, ajudar e
                 instruir o maior número de pessoas possível.</p>
-                
             </div>
         </div>
 
@@ -40,6 +39,9 @@
             <div class="events-content-section">
                 <div class = "text-block">
                     <h2 class="h2-header">{block.title}</h2>
+                    <img src="{block.cover}" alt="{block.description}" />
+                    <p>{block.date}</p>
+                    <a href="{block.link}">Fotografias</a>
                     <PortableText content = {block.body} />
                 </div>
             </div>
