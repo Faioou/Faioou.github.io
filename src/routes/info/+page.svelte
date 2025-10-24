@@ -44,24 +44,17 @@
 </div>
 
 <div class = "contacts">
-    <h2>Contactos</h2>
+    <h2>Horários</h2>
     <div class = "contacts-content">
         <div class = "contacts-item">
-            <p><b>Contactos</b></p>
-            <p>geral@testemunhareajudar.pt</p>
-            <p>+3510000000</p>
-        </div>
-        <div class = "contacts-item">
             <p><b>Sede</b></p>
-            <p>Alameda Professor Hernâni Monteiro</p>
-            <p>4200-319 Porto</p>
-            <p><a href = "https://maps.app.goo.gl/5yhunCAbiQfg8P918">[ver Google Maps]</a></p>
+            <p>Segunda à Sexta - Das 09h às 18h</p>
+            <p>Sábado, Domingo e Feriados - Encerrado</p>
         </div>
         <div class = "contacts-item">
             <p><b>Casa TEA</b></p>
-            <p>Rua de Crestins 18</p>
-            <p>4470 Moreira da Maia</p>
-            <p><a href = "https://maps.app.goo.gl/1sLnD2y1gGEpLaUM6">[ver Google Maps]</a></p>
+            <p>Segunda à Sexta - Das 09h às 18h</p>
+            <p>Sábado, Domingo e Feriados - Encerrado</p>
         </div>
     </div>
 </div>
@@ -165,13 +158,20 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--pink-light);
     }
 
     .contacts-content {
-        width: 50%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        width: 70%;
+        height: auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: var(--pink-light);
     }
 
     .contacts-item { padding: 1rem; }

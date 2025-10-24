@@ -19,7 +19,8 @@
                 <PortableText content = {item.body} />
             </div>
             <div class="options">
-                <button on:click={() => openLink('/doar')}>Quero Ajudar</button>
+                <!-- <button on:click={() => openLink('/doar')}>Quero Ajudar</button> -->
+                 <button>Quero Ajudar</button>
                 <button on:click={() => openLink('https://google.com/')}>Tornar-me Sócio</button>
             </div>
         </div>
