@@ -8,7 +8,14 @@
         <div class="history-content-section">
             <div class = "text-block">
                 <h1>História</h1>
-
+                {#each data.historyItemsList as block}
+                    <div class="history-content-section">
+                        <div class = "text-block">
+                            <h2 class="h2-header">{block.title}</h2>
+                            <PortableText content = {block.body} />
+                        </div>
+                    </div>
+                {/each}
             </div>
         </div>
 

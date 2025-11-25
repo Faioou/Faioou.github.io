@@ -2,18 +2,18 @@ import client from '$lib/sanityClient';
 
 export async function load() {
 
-    // Build events list
-    const events = await client.fetch(`*[_type == 'events']{title, body}`);
+    // Build history items list
+    const history = await client.fetch(`*[_type == 'history']{title, body}`);
 
-    if (events) {
-        let eventsList = []
-        for (let i = 0;  i < events.length; i++) {
-            eventsList.push({
-                title: events[i].title,
-                body: events[i].body,
+    if (history) {
+        let historyItemsList = []
+        for (let i = 0;  i < history.length; i++) {
+            historyItemsList.push({
+                title: history[i].title,
+                body: history[i].body,
             })
         }
-        return {eventsList}
+        return {historyItemsList}
     }
         return {
         status: 500,

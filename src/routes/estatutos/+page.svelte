@@ -8,7 +8,9 @@
         <div class="statuses-content-section">
             <div class = "text-block">
                 <h1>Estatutos</h1>
-                
+                {#each data.statutesList as block}
+                    <PortableText content = {block.body} />
+                {/each}
             </div>
         </div>
 
