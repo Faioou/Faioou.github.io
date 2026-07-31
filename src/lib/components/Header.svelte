@@ -10,16 +10,18 @@
         <div class="header-navbar">
 
             <div class="header-navbar-menu">
-                <div class="navbar-item-with-submenu">
+                <a href="/">TEA</a>
+                <a href="/missao">Missão e Propósito</a>
+                <!-- <div class="navbar-item-with-submenu">
                     <a href="/">TEA  ⌄</a>
                     <div class="navbar-item-sub-menu">
-                        <p><a href="/estatutos">Estatutos</a></p>
+                        <!-- <p><a href="/estatutos">Estatutos</a></p>
                         <p><a href="/orgaos">Órgãos Sociais</a></p>
                         <p><a href="/historia">História</a></p>
                         <p><a href="/missao">Missão e Propósito</a></p>
                     </div>
                 </div>
-                <div class="navbar-item-with-submenu">
+                <!-- <div class="navbar-item-with-submenu">
                     <a href="/">Ajuda  ⌄</a>
                     <div class = "navbar-item-sub-menu">
                         <p><a href="/">Sócios</a></p>
@@ -30,11 +32,11 @@
                 <a href="/atividades">Atividades</a>
                 <a href="/testemunhos">Testemunhos</a>
                 <a href="/merchandising">Merchandising</a>
-                <!-- <a href="/blog">Blog</a> -->
-                <a href="/info">Info</a>
+                <a href="/blog">Blog</a>
+                <a href="/info">Info</a>-->
             </div>
 
-            
+
         </div>
     </div>
 </header>

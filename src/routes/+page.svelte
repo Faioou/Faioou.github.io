@@ -23,8 +23,7 @@
                 </div>
             </div>
         </div>
-
-        <Highlights />
+        <!-- <Highlights /> -->
     </div>
 </main>
 
@@ -37,16 +36,18 @@
 
     .partners {
         padding: 4rem 0;
-        width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
 
     .partners-container {
         margin: 5rem 0 3rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
     }
 
     .partners-container img { max-width: 150px; }

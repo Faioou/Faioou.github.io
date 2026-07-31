@@ -18,11 +18,11 @@
                 <h1>{item.title}</h1>
                 <PortableText content = {item.body} />
             </div>
-            <div class="options">
-                <!-- <button on:click={() => openLink('/doar')}>Quero Ajudar</button> -->
-                 <button>Quero Ajudar</button>
+            <!-- <div class="options">
+                <button on:click={() => openLink('/doar')}>Quero Ajudar</button>
+                <button>Quero Ajudar</button>
                 <button on:click={() => openLink('https://google.com/')}>Tornar-me Sócio</button>
-            </div>
+            </div> -->
         </div>
         {/each}
     </div>
@@ -68,6 +68,17 @@
         width: 100%;
         display: flex;
         gap: 2rem;
+    }
+
+    @media (max-width: 1280px) {
+        .banner-content {
+            padding: 2rem 1rem;
+            flex-direction: column;
+        }
+
+        .banner-content-image {
+            padding: 0;
+            width: 100%; }
     }
 
 </style>

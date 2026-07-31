@@ -8,7 +8,6 @@ export async function load() {
     if (events) {
         let eventsList = []
         for (let i = 0;  i < events.length; i++) {
-            console.log(events[i].cover);
             eventsList.push({
                 title: events[i].title,
                 description: events[i].description,

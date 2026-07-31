@@ -7,7 +7,6 @@ export async function load() {
     let partnersList = []
 
     if (partners) {
-        
         for (let i = 0;  i < partners.length; i++) {
             partnersList.push({
                 image: partners[i].imageUrl,
