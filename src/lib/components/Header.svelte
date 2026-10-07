@@ -1,12 +1,12 @@
 <script>
-    import logo from '$lib/assets/logo-tea.jpg';
+    import logo from '$lib/assets/TEA_web.svg';
 </script>
 
 <header class="header">
     <div class="header-content">
-        <!-- <div class="header-logo">
+        <div class="header-logo">
             <a href="/"><img src={logo} alt="Logótipo TEA"></a>
-        </div> -->
+        </div>
         <div class="header-navbar">
 
             <div class="header-navbar-menu">
