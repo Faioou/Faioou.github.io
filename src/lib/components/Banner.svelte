@@ -1,84 +1,55 @@
 <script>
-    import PortableText from "$lib/components/PortableText.svelte"
-    export let content;
+    import PortableText from "$lib/components/PortableText.svelte";
 
-    function openLink(url) {
-        window.open(url, '_blank');
-    }
+    export let content;
 </script>
 
-<div class="banner">
-    <div class="banner-content">
+<section class="bg-[#FCDFE4] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-14">
+    <div class="mx-auto w-full max-w-7xl">
         {#each content as item}
-        <div class="banner-content-image">
-            <img src={item.image} alt="">
-        </div>
-        <div class="banner-content-text">
-            <div class="text-block">
-                <h1>{item.title}</h1>
-                <PortableText content = {item.body} />
-            </div>
-            <!-- <div class="options">
-                <button on:click={() => openLink('/doar')}>Quero Ajudar</button>
-                <button>Quero Ajudar</button>
-                <button on:click={() => openLink('https://google.com/')}>Tornar-me Sócio</button>
-            </div> -->
-        </div>
+            <article
+                class="
+                    grid w-full min-w-0 items-center gap-8
+                    lg:grid-cols-2 lg:gap-12
+                "
+            >
+                <div class="min-w-0">
+                    <img
+                        src={item.image}
+                        alt={item.title ?? ''}
+                        class="
+                            block h-auto w-full
+                            rounded-xl
+                            object-contain
+                            shadow-md
+                        "
+                    />
+                </div>
+
+                <div class="min-w-0">
+                    <h1
+                        class="
+                            text-2xl font-semibold leading-tight
+                            text-[#4B4548]
+                            sm:text-3xl
+                            lg:text-4xl
+                        "
+                    >
+                        {item.title}
+                    </h1>
+
+                    <div
+                        class="
+                            mt-4
+                            text-base leading-7
+                            text-[#4B4548]
+                            sm:text-lg
+                        "
+                    >
+                        <PortableText content={item.body} />
+                    </div>
+                </div>
+            </article>
         {/each}
     </div>
-</div>
-
-<style>
-    .banner {
-        background-color: var(--pink-light);
-    }
-
-    .banner-content {
-        padding: 4rem 2rem;
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-    }
-
-    .banner-content-image {
-        padding: 1rem;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .banner-content-image img {
-        max-width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    .banner-content-text {
-        padding: 1rem;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .options {
-        margin-top: .5rem;
-        width: 100%;
-        display: flex;
-        gap: 2rem;
-    }
-
-    @media (max-width: 1280px) {
-        .banner-content {
-            padding: 2rem 1rem;
-            flex-direction: column;
-        }
-
-        .banner-content-image {
-            padding: 0;
-            width: 100%; }
-    }
-
-</style>
+</section>

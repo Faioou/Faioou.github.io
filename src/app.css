@@ -2,3 +2,246 @@
 
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
+
+
+
+/* =========================================================
+   INÍCIO DA FAMÍLIA TIPOGRÁFICA EINA 02
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Eina 02 — Light
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-Light.ttf")
+        format("truetype");
+
+    font-style: normal;
+    font-weight: 300;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — Light Italic
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-LightItalic.ttf")
+        format("truetype");
+
+    font-style: italic;
+    font-weight: 300;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — Regular
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-Regular.ttf")
+        format("truetype");
+
+    font-style: normal;
+    font-weight: 400;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — Regular Italic
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-RegularItalic.ttf")
+        format("truetype");
+
+    font-style: italic;
+    font-weight: 400;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — SemiBold
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-SemiBold.ttf")
+        format("truetype");
+
+    font-style: normal;
+    font-weight: 600;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — SemiBold Italic
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-SemiboldItalic.ttf")
+        format("truetype");
+
+    font-style: italic;
+    font-weight: 600;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — Bold
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-Bold.ttf")
+        format("truetype");
+
+    font-style: normal;
+    font-weight: 700;
+
+    font-display: swap;
+}
+
+
+/* ---------------------------------------------------------
+   Eina 02 — Bold Italic
+   --------------------------------------------------------- */
+
+@font-face {
+    font-family: "Eina 02";
+
+    src:
+        url("/fonts/eina/Eina02-BoldItalic.ttf")
+        format("truetype");
+
+    font-style: italic;
+    font-weight: 700;
+
+    font-display: swap;
+}
+
+
+/* =========================================================
+   FIM DA FAMÍLIA TIPOGRÁFICA EINA 02
+   ========================================================= */
+
+
+
+
+
+/* =========================================================
+   INÍCIO DA FAMÍLIA TIPOGRÁFICA CORA
+   ========================================================= */
+
+
+/*
+ * Atualmente o projeto possui apenas Cora Medium.
+ *
+ * O browser tenta os formatos pela seguinte ordem:
+ *
+ * 1. WOFF2 → preferencial para a web
+ * 2. WOFF  → fallback
+ * 3. TTF   → fallback adicional
+ */
+
+@font-face {
+    font-family: "Cora";
+
+    src:
+        url("/fonts/cora/cora_medium.woff2")
+        format("woff2"),
+
+        url("/fonts/cora/cora_medium.woff")
+        format("woff"),
+
+        url("/fonts/cora/cora_medium.ttf")
+        format("truetype");
+
+    font-style: normal;
+    font-weight: 500;
+
+    font-display: swap;
+}
+
+
+/* =========================================================
+   FIM DA FAMÍLIA TIPOGRÁFICA CORA
+   ========================================================= */
+
+
+
+
+
+/* =========================================================
+   INÍCIO DAS CLASSES TIPOGRÁFICAS REUTILIZÁVEIS
+   ========================================================= */
+
+
+/*
+ * Utilização:
+ *
+ * class="font-eina"
+ */
+
+.font-eina {
+    font-family:
+        "Eina 02",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+
+/*
+ * Utilização:
+ *
+ * class="font-cora"
+ */
+
+.font-cora {
+    font-family:
+        "Cora",
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+
+/* =========================================================
+   FIM DAS CLASSES TIPOGRÁFICAS REUTILIZÁVEIS
+   ========================================================= */
