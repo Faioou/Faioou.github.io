@@ -1,13 +1,201 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="pt" class="site-loading">
+
 	<head>
+
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<link rel="stylesheet" href="%sveltekit.assets%/css/styles.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+
+
+		<!-- =====================================================
+		     ÍCONE DO SITE
+		     ===================================================== -->
+
+		<link
+			rel="icon"
+			href="%sveltekit.assets%/favicon.png"
+		/>
+
+
+		<!-- =====================================================
+		     CSS GLOBAL
+		     ===================================================== -->
+
+		<link
+			rel="stylesheet"
+			href="%sveltekit.assets%/css/styles.css"
+		/>
+
+
+		<!-- =====================================================
+		     PROTEÇÃO CONTRA FOUC
+		     ===================================================== -->
+
+		<style>
+
+			/*
+			 * Evita que o browser mostre a página
+			 * sem CSS durante os primeiros instantes.
+			 */
+			html.site-loading body {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+
+			/*
+			 * Fundo apresentado enquanto o site
+			 * termina de carregar.
+			 */
+			html.site-loading {
+				background-color: #FFF7FA;
+			}
+
+
+			/*
+			 * Quando tudo estiver carregado,
+			 * o site aparece suavemente.
+			 */
+			html.site-ready body {
+				opacity: 1;
+				visibility: visible;
+
+				transition:
+					opacity 180ms ease;
+			}
+
+
+			html.site-ready {
+				background-color: #FFF7FA;
+			}
+
+
+			/*
+			 * Evita animação caso o utilizador
+			 * tenha pedido movimento reduzido.
+			 */
+			@media (prefers-reduced-motion: reduce) {
+
+				html.site-ready body {
+					transition: none;
+				}
+
+			}
+
+		</style>
+
+
+		<!-- =====================================================
+		     CONTROLO DO CARREGAMENTO
+		     ===================================================== -->
+
+		<script>
+
+			(function () {
+
+				let revealed = false;
+
+
+				function revealSite() {
+
+					if (revealed) {
+						return;
+					}
+
+
+					revealed = true;
+
+
+					document.documentElement.classList.remove(
+						'site-loading'
+					);
+
+
+					document.documentElement.classList.add(
+						'site-ready'
+					);
+
+				}
+
+
+				/*
+				 * window.load espera pelos recursos principais
+				 * da página antes de a revelar.
+				 */
+				window.addEventListener(
+					'load',
+					function () {
+
+						requestAnimationFrame(
+							function () {
+
+								requestAnimationFrame(
+									revealSite
+								);
+
+							}
+						);
+
+					},
+					{
+						once: true
+					}
+				);
+
+
+				/*
+				 * Salvaguarda:
+				 *
+				 * se algum recurso externo demorar ou falhar,
+				 * nunca deixamos o site escondido para sempre.
+				 */
+				window.setTimeout(
+					revealSite,
+					5000
+				);
+
+			})();
+
+		</script>
+
+
+		<!-- =====================================================
+		     JAVASCRIPT DESATIVADO
+		     ===================================================== -->
+
+		<noscript>
+
+			<style>
+
+				html.site-loading body {
+					opacity: 1 !important;
+					visibility: visible !important;
+				}
+
+			</style>
+
+		</noscript>
+
+
 		%sveltekit.head%
+
 	</head>
+
+
+
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+
+		<div style="display: contents">
+
+			%sveltekit.body%
+
+		</div>
+
 	</body>
+
 </html>
